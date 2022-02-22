@@ -4,7 +4,7 @@
 </script>
 
 <header>
-	<div class="corner">
+	<div class="logo-holder">
 		<a href="https://kit.svelte.dev">
 			<svg
 				version="1.1"
@@ -110,26 +110,21 @@
 		</a>
 	</div>
 
-	<nav>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
-		</svg>
-		<ul>
-			<li class:active={$page.url.pathname === '/'}><a sveltekit:prefetch href="/">Home</a></li>
-			<li class:active={$page.url.pathname === '/about'}>
-				<a sveltekit:prefetch href="/about">About</a>
-			</li>
-			<li class:active={$page.url.pathname === '/todos'}>
-				<a sveltekit:prefetch href="/todos">Todos</a>
-			</li>
-		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
-		</svg>
-	</nav>
-
-	<div class="corner">
-		<!-- TODO put something else here? github link? -->
+	<div class="righthead">
+		<nav>
+			<ul>
+				<li class:active={$page.url.pathname === '/'}><a sveltekit:prefetch href="/">Home</a></li>
+				<li class:active={$page.url.pathname === '/about'}>
+					<a sveltekit:prefetch href="/about">About</a>
+				</li>
+				<li class:active={$page.url.pathname === '/todos'}>
+					<a sveltekit:prefetch href="/todos">Todos</a>
+				</li>
+			</ul>
+		</nav>
+		<a href="#" class="rondedbutt">
+			Hire us.
+		</a>
 	</div>
 </header>
 
@@ -137,88 +132,53 @@
 	header {
 		display: flex;
 		justify-content: space-between;
-		background-color: black;
-	}
-
-	.corner {
-		svg {
-			width: 200px;
-			padding: 15px 30px;
-			.st0 {
-				fill: var(--accent-color);
-			}
-			.st1 {
-				fill: var(--pure-white);
-			}
-			.hammah{
-				fill: transparent;
+		padding: 0 30px;
+		align-items: center;
+		.righthead{
+			display: flex;
+			align-items: center;
+			.rondedbutt{
+				margin-left: 10px;
+				background-color: var(--primary-color);
+				color: var(--pure-white);
+				border-radius: 90px;
+				padding: 5px 20px;
 			}
 		}
 	}
 
-	.corner a {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
+	.logo-holder {
+		svg {
+			width: 200px;
+			padding: 15px 15px 15px 0;
+			.st0 {
+				fill: var(--accent-color);
+			}
+			.st1 {
+				fill: var(--primary-color);
+			}
+			.hammah {
+				fill: transparent;
+			}
+		}
 	}
-
 	nav {
-		display: flex;
-		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
-	}
-
-	path {
-		fill: var(--background);
-	}
-
-	ul {
-		position: relative;
-		padding: 0;
-		margin: 0;
-		height: 3em;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		list-style: none;
-		background: var(--background);
-		background-size: contain;
-	}
-
-	li {
-		position: relative;
-		height: 100%;
-	}
-
-	li.active::before {
-		--size: 6px;
-		content: '';
-		width: 0;
-		height: 0;
-		position: absolute;
-		top: 0;
-		left: calc(50% - var(--size));
-		border: var(--size) solid transparent;
-		border-top: var(--size) solid var(--accent-color);
-	}
-
-	nav a {
-		display: flex;
-		height: 100%;
-		align-items: center;
-		padding: 0 1em;
-		color: var(--heading-color);
-		font-weight: 700;
-		font-size: 0.8rem;
+		font-family: var(--font-oswald);
+		font-size: 16px;
 		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		text-decoration: none;
-		transition: color 0.2s linear;
-	}
+		letter-spacing: 1px;
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			li {
+				display: inline;
+				padding: 0 10px;
+			}
+		}
 
-	a:hover {
-		color: var(--accent-color);
+		a {
+			color: var(--primary-color);
+		}
 	}
 </style>

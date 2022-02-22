@@ -2,9 +2,9 @@
 
 :root {
 	font-family: 'Noto Sans', sans-serif;
-	--font-mono: 'Fira Mono', monospace;
+	--font-oswald: 'Oswald', sans-serif;
 	--pure-white: #ffffff;
-	--primary-color: #b9c6d2;
+	--primary-color: #252525;
 	--secondary-color: #d0dde9;
 	--tertiary-color: #edf0f8;
 	--accent-color: #0096cd;
@@ -18,13 +18,6 @@
 body {
 	min-height: 100vh;
 	margin: 0;
-	background-color: var(--primary-color);
-	background: linear-gradient(
-		180deg,
-		var(--primary-color) 0%,
-		var(--secondary-color) 10.45%,
-		var(--tertiary-color) 41.35%
-	);
 }
 
 body::before {
@@ -52,7 +45,7 @@ body::before {
 h1,
 h2,
 h3 {
-	font-family: 'Oswald', sans-serif;
+	font-family: var(--font-oswald);
 	text-transform: uppercase;
 }
 
