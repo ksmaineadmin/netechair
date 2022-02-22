@@ -1,5 +1,6 @@
-<script context="module">
+<script context="module" lang="ts">
 	import { browser, dev } from '$app/env';
+	import 'aos/dist/aos.css';
 
 	// we don't need any JS on this page, though we'll load
 	// it in dev so that we get hot module replacement...
@@ -11,7 +12,14 @@
 
 	// since there's no dynamic data here, we can prerender
 	// it so that it gets served as a static asset in prod
-	export const prerender = true;
+	export const prerender = false;
+</script>
+
+<script lang="ts">
+	import AOS from 'aos';
+	if (typeof window !== 'undefined') {
+		AOS.init();
+	}
 </script>
 
 <svelte:head>
@@ -19,7 +27,7 @@
 </svelte:head>
 
 <div class="content">
-	<h1>About this app</h1>
+	<h1 data-aos="fade-up">About this app</h1>
 
 	<p>
 		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
