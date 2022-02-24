@@ -1,16 +1,10 @@
 <script context="module" lang="js">
-    export async function load({fetch, props}) {
+    export async function load({fetch}) {
         const res = await fetch('https://jsonplaceholder.typicode.com/users')
         const data = await res.json();
-        let formattedData = data.map((val) => {
-            return {
-                ...val,
-                id: val.name.replace(" ", "-").toLowerCase()
-            }
-        })
         if (res.ok) {
             return {
-                props: {team: formattedData}
+                props: {team: data}
             }
         }
     }
