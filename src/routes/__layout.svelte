@@ -1,6 +1,8 @@
 <script lang="ts">
 	import Header from '$lib/header/Header.svelte';
 	import '../app.scss';
+
+	const currentYear = new Date().getFullYear()
 </script>
 
 <Header />
@@ -10,7 +12,7 @@
 </main>
 
 <footer>
-	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+	<p>Copyright {currentYear} New England Tech Air</p>
 </footer>
 
 <style>
