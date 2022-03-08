@@ -25,11 +25,11 @@
 				elems[i].style.cssText = 'opacity: 0;';
 			}
 
-			const currentCaption = document.querySelector('.caption-' + currentSlideIndex);
-			currentCaption.style.cssText = 'opacity: 1;';
+			// const currentCaption = document.querySelector('.caption-' + currentSlideIndex);
+			// currentCaption.style.cssText = 'opacity: 1;';
 		}
 
-		let intervalID = setInterval(advanceSliderItem, 3000);
+		let intervalID = setInterval(advanceSliderItem, 5000);
 	});
 </script>
 
@@ -60,7 +60,7 @@
 		overflow: hidden;
 		width: 100%;
 		height: 100vh;
-		margin: 48px auto;
+		margin: 0 auto;
 		background-size: cover;
 		border-radius: 3px;
 		transition: background-image 0.8s ease-in-out;

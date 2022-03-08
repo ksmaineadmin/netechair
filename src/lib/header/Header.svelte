@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import logo from './techairlogo.svg';
 </script>
 
 <header>
@@ -125,9 +124,7 @@
 				</li>
 			</ul>
 		</nav>
-		<a href="#" class="rondedbutt">
-			Hire us.
-		</a>
+		<a href="#" class="rondedbutt"> Hire us. </a>
 	</div>
 </header>
 
@@ -137,10 +134,10 @@
 		justify-content: space-between;
 		padding: 0 30px;
 		align-items: center;
-		.righthead{
+		.righthead {
 			display: flex;
 			align-items: center;
-			.rondedbutt{
+			.rondedbutt {
 				margin-left: 10px;
 				background-color: var(--primary-color);
 				color: var(--pure-white);
