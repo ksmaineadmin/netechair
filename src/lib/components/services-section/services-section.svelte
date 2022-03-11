@@ -1,7 +1,7 @@
 <script></script>
 
 <section>
-	<article>
+	<article data-aos="fade-up">
 		<span>Icon here</span>
 		<h3>Our services</h3>
 		<p>
@@ -12,25 +12,24 @@
 		<a href="request-pricing">Request pricing</a>
 	</article>
 
-	<article>
+	<article data-aos="fade-up">
 		<span>Icon here</span>
-		<h3>Our services</h3>
+		<h3>Featured Projects</h3>
 		<p>
-			We draw on expertise from across the entire project scope, including engineering, procurement,
-			fabrication, construction, 3D coordination and installation.
+			We’ve given our clients the confidence that we can deliver complex, logistically challenging,
+			and technically difficult projects on time while maintaining safety as our #1 priority.
 		</p>
-		<p>Our comprehensive services have transformed project execution.</p>
 		<a href="request-pricing">Request pricing</a>
 	</article>
 
-	<article>
+	<article data-aos="fade-up">
 		<span>Icon here</span>
-		<h3>Our services</h3>
+		<h3>New Careers</h3>
 		<p>
-			We draw on expertise from across the entire project scope, including engineering, procurement,
-			fabrication, construction, 3D coordination and installation.
+			Tech Air the leader in innovation and employment growth within the HVAC industry. We design
+			and build challenging and unique projects that are re-shaping the landscape of New England.
+			Come build a better future with us.
 		</p>
-		<p>Our comprehensive services have transformed project execution.</p>
 		<a href="request-pricing">Request pricing</a>
 	</article>
 </section>
@@ -39,7 +38,7 @@
 	section {
 		background: var(--accent-color-light);
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		grid-template-columns: repeat(3, 1fr);
 		gap: 1rem;
 		padding: 2rem 10rem;
 	}
@@ -52,8 +51,11 @@
 		border-bottom: 4px solid transparent;
 		transition: border-bottom ease-in 100ms;
 
+		h3 {
+			font-size: 1.5rem;
+		}
+
 		&:hover {
-			cursor: pointer;
 			border-bottom: 4px solid var(--accent-color);
 		}
 	}
