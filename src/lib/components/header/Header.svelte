@@ -131,6 +131,7 @@
 <style lang="scss">
 	header {
 		display: flex;
+		height: 100px;
 		justify-content: space-between;
 		padding: 0 30px;
 		align-items: center;

@@ -16,6 +16,10 @@
 </footer>
 
 <style>
+	main {
+		height: 100%;
+	}
+
 	footer {
 		display: flex;
 		flex-direction: column;

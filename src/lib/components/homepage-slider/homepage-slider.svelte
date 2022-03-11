@@ -83,36 +83,42 @@
 
 <div id="video-container">
 	<video preload="auto" autoplay loop muted width="1440" height="810">
-		<source
-			src="https://vectorform.com/wp-content/themes/vectorform/videos/about.mp4"
-			type="video/mp4"
-		/>
-		<source
-			src="https://vectorform.com/wp-content/themes/vectorform/videos/about.webm"
-			type="video/webm"
-		/>
-		<source
-			src="https://vectorform.com/wp-content/themes/vectorform/videos/about.ogv"
-			type="video/ogv"
-		/>
+		<source src="homepage-video.mp4" type="video/mp4" />
 	</video>
 	<div class="overlay">
-		<div class="overlay__inner">
-			<h1>In Business for Over Thirty Five Years</h1>
+		<h1>In Business for Over Thirty Five Years</h1>
+		<div class="button-container">
+			<div class="center">
+				<button class="btn">
+					<svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+						<polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+						<polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+					</svg>
+					<span>Contact Us</span>
+				</button>
+			</div>
 		</div>
 	</div>
 </div>
 
 <style lang="scss">
 	#video-container {
+		display: grid;
+		align-items: center;
 		position: relative;
-		width: 100%;
 		height: 100%;
 		z-index: 10;
 
 		.touch & {
 			background: url(http://xtianmiller.com/dist/videos/winter_creek.jpg) no-repeat center;
 			background-size: cover;
+		}
+
+		&::before {
+			content: '';
+			background: rgba(0, 0, 0, 0.6);
+			position: absolute;
+			inset: 0;
 		}
 	}
 	video {
@@ -126,72 +132,80 @@
 
 	.overlay {
 		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
+		right: 10rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
 		z-index: 20;
-		background-color: rgba(0, 0, 0, 0.7);
-		padding-left: 6%;
-		padding-right: 6%;
-		display: table;
-
-		&__inner {
-			width: 100%;
-			height: auto;
-			display: table-cell;
-			vertical-align: middle;
-			text-align: center;
-		}
 
 		h1,
 		h2 {
-			max-width: 40em;
+			max-width: 30rem;
 			font-weight: 700;
 			color: #fff;
 			font-family: 'Raleway', sans-serif;
 			line-height: 1.3;
-			margin: 0 auto;
 		}
 
-		p {
-			padding-top: 1em;
-			max-width: 40em;
-			margin: 0 auto;
+		a {
+			background: white;
+			border-radius: 90px;
+			padding: 5px 20px;
+			width: 100%;
+			text-align: center;
+			font-size: 1.5rem;
+			color: black;
 		}
+	}
 
-		a.btn {
-			display: inline-block;
-			margin-top: 25px;
-			border: 1px solid #00c1bb;
-			color: #00c1bb;
-			text-decoration: none;
-			font-size: 14px;
-			text-transform: uppercase;
-			letter-spacing: 2px;
-			position: relative;
-			overflow: hidden;
-		}
+	.button-container {
+		margin-top: 1rem;
+		transform: translate(-50%, -50%);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
-		a.btn span {
-			display: inline-block;
-			padding: 6px 40px;
-			transition: transform 0.4s;
-		}
+	.center {
+		width: 180px;
+		height: 60px;
+		position: absolute;
+	}
 
-		a.btn .row2 {
-			position: absolute;
-			left: 0;
-			top: 0;
-			transform: translateY(100%);
-		}
+	.btn {
+		width: 180px;
+		height: 60px;
+		cursor: pointer;
+		background: rgba(0, 0, 0, 0.3);
+		border: 1px solid var(--accent-color);
+		outline: none;
+		transition: 1s ease-in-out;
+	}
 
-		a.btn:hover .row1 {
-			transform: translateY(-100%);
-		}
+	svg {
+		position: absolute;
+		left: 0;
+		top: 0;
+		fill: none;
+		stroke: #fff;
+		stroke-dasharray: 150 480;
+		stroke-dashoffset: 150;
+		transition: 1s ease-in-out;
+	}
 
-		a.btn:hover .row2 {
-			transform: translateY(0);
-		}
+	.btn:hover {
+		transition: 1s ease-in-out;
+		background: var(--accent-color);
+	}
+
+	.btn:hover svg {
+		stroke-dashoffset: -480;
+	}
+
+	.btn span {
+		color: white;
+		font-size: 18px;
+		font-weight: 100;
 	}
 </style>
