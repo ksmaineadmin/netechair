@@ -1,10 +1,11 @@
 <script lang="js">
 	import { onMount } from 'svelte';
 	onMount(() => {
-		const slideArray = [];
-		for (let i = 0; i < document.querySelectorAll('.slider div').length; i++) {
-			slideArray.push(document.querySelectorAll('.slider div')[i].dataset.background);
-		}
+		const slideArray = [
+			'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
+			'https://images.unsplash.com/photo-1620203853151-496c7228306c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1896&q=80',
+			'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80'
+		];
 
 		let currentSlideIndex = -1;
 
@@ -24,9 +25,6 @@
 			for (let i = 0; i < elems.length; i++) {
 				elems[i].style.cssText = 'opacity: 0;';
 			}
-
-			// const currentCaption = document.querySelector('.caption-' + currentSlideIndex);
-			// currentCaption.style.cssText = 'opacity: 1;';
 		}
 
 		let intervalID = setInterval(advanceSliderItem, 5000);
@@ -34,24 +32,9 @@
 </script>
 
 <div class="slider">
-	<div
-		class="slide"
-		data-background="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
-	/>
-	<!-- <p class="caption caption-0">
-		The first slide.
-		<br /><small>This is an awesome forest.</small>
-	</p> -->
-
-	<div
-		class="slide"
-		data-background="https://images.unsplash.com/photo-1620203853151-496c7228306c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1896&q=80"
-	/>
-
-	<div
-		class="slide"
-		data-background="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
-	/>
+	<div class="slide" />
+	<div class="slide" />
+	<div class="slide" />
 </div>
 
 <style>
@@ -59,7 +42,7 @@
 		position: relative;
 		overflow: hidden;
 		width: 100%;
-		height: 100vh;
+		height: 70vh;
 		margin: 0 auto;
 		background-size: cover;
 		border-radius: 3px;

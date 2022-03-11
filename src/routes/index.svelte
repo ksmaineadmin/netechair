@@ -3,7 +3,7 @@
 </script>
 
 <script lang="js">
-	import HomepageSlider from '$lib/homepage-slider/homepage-slider.svelte';
+	import HomepageSlider from '$lib/components/homepage-slider/homepage-slider.svelte';
 </script>
 
 <svelte:head>
