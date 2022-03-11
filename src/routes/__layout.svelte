@@ -1,8 +1,23 @@
+<script context="module" lang="ts">
+	// since there's no dynamic data here, we can prerender
+	// it so that it gets served as a static asset in prod
+	export const prerender = true;
+</script>
+
 <script lang="ts">
 	import Header from '$lib/components/header/Header.svelte';
 	import '../app.scss';
+	import 'aos/dist/aos.css';
+	import { onMount } from 'svelte';
+	import AOS from 'aos';
 
 	const currentYear = new Date().getFullYear();
+
+	onMount(() => {
+		if (typeof window !== 'undefined') {
+			AOS.init();
+		}
+	});
 </script>
 
 <Header />

@@ -1,36 +1,45 @@
-<script></script>
+<script context="module" lang="ts">
+	export const prerender = true;
+</script>
 
 <section>
-	<article data-aos="fade-up">
-		<span>Icon here</span>
-		<h3>Our services</h3>
-		<p>
-			We draw on expertise from across the entire project scope, including engineering, procurement,
-			fabrication, construction, 3D coordination and installation.
-		</p>
-		<p>Our comprehensive services have transformed project execution.</p>
-		<a href="request-pricing">Request pricing</a>
+	<article>
+		<div data-aos="fade-up" data-aos-delay="100">
+			<span>Icon here</span>
+			<h3>Our services</h3>
+			<p>
+				We draw on expertise from across the entire project scope, including engineering,
+				procurement, fabrication, construction, 3D coordination and installation.
+			</p>
+			<p>Our comprehensive services have transformed project execution.</p>
+			<a href="request-pricing">Request pricing</a>
+		</div>
 	</article>
 
-	<article data-aos="fade-up">
-		<span>Icon here</span>
-		<h3>Featured Projects</h3>
-		<p>
-			We’ve given our clients the confidence that we can deliver complex, logistically challenging,
-			and technically difficult projects on time while maintaining safety as our #1 priority.
-		</p>
-		<a href="request-pricing">Request pricing</a>
+	<article>
+		<div data-aos="fade-up" data-aos-delay="200">
+			<span>Icon here</span>
+			<h3>Featured Projects</h3>
+			<p>
+				We’ve given our clients the confidence that we can deliver complex, logistically
+				challenging, and technically difficult projects on time while maintaining safety as our #1
+				priority.
+			</p>
+			<a href="request-pricing">Request pricing</a>
+		</div>
 	</article>
 
-	<article data-aos="fade-up">
-		<span>Icon here</span>
-		<h3>New Careers</h3>
-		<p>
-			Tech Air the leader in innovation and employment growth within the HVAC industry. We design
-			and build challenging and unique projects that are re-shaping the landscape of New England.
-			Come build a better future with us.
-		</p>
-		<a href="request-pricing">Request pricing</a>
+	<article>
+		<div data-aos="fade-up" data-aos-delay="300">
+			<span>Icon here</span>
+			<h3>New Careers</h3>
+			<p>
+				Tech Air the leader in innovation and employment growth within the HVAC industry. We design
+				and build challenging and unique projects that are re-shaping the landscape of New England.
+				Come build a better future with us.
+			</p>
+			<a href="request-pricing">Request pricing</a>
+		</div>
 	</article>
 </section>
 
