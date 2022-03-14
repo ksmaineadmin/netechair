@@ -126,21 +126,12 @@
 
 	.overlay {
 		position: absolute;
-		right: 10rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: flex-end;
+		justify-content: center;
+		width: 100%;
 		z-index: 20;
-
-		@media screen and (max-width: $device-small) {
-			// display: flex;
-			// flex-direction: column;
-			// align-items: center;
-			// justify-content: center;
-			position: absolute;
-			inset: 0;
-		}
 
 		h1,
 		h2 {
