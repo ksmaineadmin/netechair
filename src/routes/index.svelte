@@ -7,6 +7,7 @@
 <script lang="js">
 	import HomepageSlider from '$lib/components/homepage-slider/homepage-slider.svelte';
 	import ServicesSection from '$lib/components/services-section/services-section.svelte';
+	import Affiliations from '../lib/components/affiliations/affiliations.svelte';
 </script>
 
 <svelte:head>
@@ -15,3 +16,4 @@
 
 <HomepageSlider />
 <ServicesSection />
+<Affiliations />

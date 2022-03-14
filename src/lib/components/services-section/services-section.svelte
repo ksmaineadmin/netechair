@@ -87,7 +87,9 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 		gap: 1rem;
-		padding: 2rem 10rem;
+		align-items: center;
+		padding: 4rem 10rem;
+		min-height: 50vh;
 	}
 
 	@media screen and (max-width: $device-medium) {
@@ -102,6 +104,7 @@
 	}
 
 	article {
+		height: -webkit-fill-available;
 		background: var(--surface-color);
 		border-radius: 8px;
 		padding: 2rem;
