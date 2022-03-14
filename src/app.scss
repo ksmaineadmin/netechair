@@ -1,10 +1,13 @@
 :root {
 	font-family: 'Noto Sans', sans-serif;
+	--background-color: #121212;
 	--font-oswald: 'Oswald', sans-serif;
 	--pure-white: #ffffff;
 	--primary-color: #252525;
 	--secondary-color: #d0dde9;
-	--card-surface-color: var(--pure-white);
+	--primary-font-color: var(--pure-white);
+	--secondary-font-color: #adadad;
+	--card-surface-color: #333333;
 	--tertiary-color: #edf0f8;
 	--accent-color: #0096cd;
 	--accent-color-light: #f1f2fc;
@@ -16,10 +19,18 @@
 	--column-margin-top: 4rem;
 }
 
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 body,
 html {
 	margin: 0;
-	box-sizing: border-box;
+	background: var(--background-color);
+	color: var(--secondary-font-color);
 }
 
 h1,
@@ -34,7 +45,7 @@ h2,
 p {
 	font-weight: 400;
 	font-size: 14px;
-	color: var(--heading-color);
+	color: var(--primary-font-color);
 }
 
 p {

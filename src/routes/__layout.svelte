@@ -30,7 +30,7 @@
 	<p>Copyright {currentYear} New England Tech Air</p>
 </footer>
 
-<style>
+<style lang="scss">
 	main {
 		height: 100%;
 	}
@@ -41,6 +41,10 @@
 		justify-content: center;
 		align-items: center;
 		padding: 40px;
+
+		p {
+			color: var(--secondary-font-color);
+		}
 	}
 
 	@media (min-width: 480px) {

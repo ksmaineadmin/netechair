@@ -1,5 +1,7 @@
 <script lang="js">
 	import { onMount } from 'svelte';
+	import SlickButton from '../slick-button/slick-button.svelte';
+
 	onMount(() => {
 		function debounce(func, wait, immediate) {
 			// Debounce
@@ -83,25 +85,17 @@
 
 <div id="video-container">
 	<video preload="auto" autoplay loop muted width="1440" height="810">
-		<source src="homepage-video.mp4" type="video/mp4" />
+		<source src="homepage-videos/oil-pipes.mp4" type="video/mp4" />
 	</video>
 	<div class="overlay">
 		<h1>In Business for Over Thirty Five Years</h1>
-		<div class="button-container">
-			<div class="center">
-				<button class="btn">
-					<svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-						<polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-						<polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-					</svg>
-					<span>Contact Us</span>
-				</button>
-			</div>
-		</div>
+		<SlickButton />
 	</div>
 </div>
 
 <style lang="scss">
+	@import '../../../variables.scss';
+
 	#video-container {
 		display: grid;
 		align-items: center;
@@ -139,6 +133,15 @@
 		justify-content: flex-end;
 		z-index: 20;
 
+		@media screen and (max-width: $device-small) {
+			// display: flex;
+			// flex-direction: column;
+			// align-items: center;
+			// justify-content: center;
+			position: absolute;
+			inset: 0;
+		}
+
 		h1,
 		h2 {
 			max-width: 30rem;
@@ -157,55 +160,5 @@
 			font-size: 1.5rem;
 			color: black;
 		}
-	}
-
-	.button-container {
-		margin-top: 1rem;
-		transform: translate(-50%, -50%);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.center {
-		width: 180px;
-		height: 60px;
-		position: absolute;
-	}
-
-	.btn {
-		width: 180px;
-		height: 60px;
-		cursor: pointer;
-		background: rgba(0, 0, 0, 0.3);
-		border: 1px solid var(--accent-color);
-		outline: none;
-		transition: 1s ease-in-out;
-	}
-
-	svg {
-		position: absolute;
-		left: 0;
-		top: 0;
-		fill: none;
-		stroke: #fff;
-		stroke-dasharray: 150 480;
-		stroke-dashoffset: 150;
-		transition: 1s ease-in-out;
-	}
-
-	.btn:hover {
-		transition: 1s ease-in-out;
-		background: var(--accent-color);
-	}
-
-	.btn:hover svg {
-		stroke-dashoffset: -480;
-	}
-
-	.btn span {
-		color: white;
-		font-size: 18px;
-		font-weight: 100;
 	}
 </style>
