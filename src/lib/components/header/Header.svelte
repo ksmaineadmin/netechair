@@ -179,7 +179,7 @@
 		}
 
 		a {
-			color: var(--secondary-font-color);
+			color: var(--primary-font-color);
 		}
 	}
 </style>
