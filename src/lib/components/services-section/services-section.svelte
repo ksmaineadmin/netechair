@@ -20,7 +20,7 @@
 				procurement, fabrication, construction, 3D coordination and installation. Our comprehensive
 				services have transformed project execution.
 			</p>
-			<a href="request-pricing"
+			<a href="/"
 				>Request Pricing
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
 					><path
@@ -44,7 +44,7 @@
 				challenging, and technically difficult projects on time while maintaining safety as our #1
 				priority.
 			</p>
-			<a href="request-pricing"
+			<a href="/"
 				>View Projects
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
 					><path
@@ -68,7 +68,7 @@
 				and build challenging and unique projects that are re-shaping the landscape of New England.
 				Come build a better future with us.
 			</p>
-			<a href="request-pricing"
+			<a href="/"
 				>Career Details
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
 					><path
