@@ -86,6 +86,7 @@
 	section {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+		justify-content: space-around;
 		gap: 1rem;
 		align-items: center;
 		padding: 4rem 10rem;

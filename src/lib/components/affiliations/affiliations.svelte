@@ -37,7 +37,7 @@
 	.affiliations {
 		&__container {
 			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+			grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 			justify-content: center;
 			justify-items: center;
 			gap: 3rem;
@@ -49,6 +49,10 @@
 				&:hover {
 					filter: grayscale(0);
 				}
+			}
+
+			@media screen and (max-width: $device-xlarge) {
+				grid-template-columns: 1fr 1fr;
 			}
 		}
 	}
