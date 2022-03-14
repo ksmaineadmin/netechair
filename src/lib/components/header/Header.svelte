@@ -4,7 +4,7 @@
 
 <header>
 	<div class="logo-holder">
-		<a href="https://kit.svelte.dev">
+		<a href="/">
 			<svg
 				version="1.1"
 				xmlns="http://www.w3.org/2000/svg"
