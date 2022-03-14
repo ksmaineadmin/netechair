@@ -7,7 +7,6 @@
 <script lang="ts">
 	import Header from '$lib/components/header/Header.svelte';
 	import '../app.scss';
-	import 'aos/dist/aos.css';
 	import { onMount } from 'svelte';
 	import AOS from 'aos';
 
