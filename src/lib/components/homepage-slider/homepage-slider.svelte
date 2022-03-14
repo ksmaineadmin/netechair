@@ -118,6 +118,9 @@
 	video {
 		width: 100%;
 		height: 100%;
+		display: block;
+		object-fit: cover;
+		height: calc(100vh - 100px);
 
 		.touch & {
 			display: none;

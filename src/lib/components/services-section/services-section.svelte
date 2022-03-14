@@ -6,7 +6,7 @@
 	import SlickButton from '../slick-button/slick-button.svelte';
 </script>
 
-<section>
+<section data-aos="fade">
 	<article>
 		<div data-aos="fade-up" data-aos-delay="100" class="article__inner">
 			<img src="images/home/undraw_at_work_re_qotl.svg" alt="" />
