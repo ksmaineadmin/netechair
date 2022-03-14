@@ -69,7 +69,7 @@
 	}
 
 	article {
-		background: var(--card-surface-color);
+		background: var(--surface-color);
 		border-radius: 8px;
 		padding: 2rem;
 		text-align: center;

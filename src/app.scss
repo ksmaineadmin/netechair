@@ -4,19 +4,11 @@
 	--font-oswald: 'Oswald', sans-serif;
 	--pure-white: #ffffff;
 	--primary-color: #252525;
-	--secondary-color: #d0dde9;
 	--primary-font-color: var(--pure-white);
 	--secondary-font-color: #adadad;
-	--card-surface-color: #333333;
-	--tertiary-color: #edf0f8;
+	--surface-color: #333333;
 	--accent-color: #0096cd;
-	--accent-color-light: #f1f2fc;
-	--dark-text-heading: #000a2d;
-	--heading-color: rgba(0, 0, 0, 0.7);
 	--text-color: #444444;
-	--background-without-opacity: rgba(255, 255, 255, 0.7);
-	--column-width: 42rem;
-	--column-margin-top: 4rem;
 }
 
 /* Preferred box-sizing value */
@@ -68,17 +60,6 @@ h1 {
 
 h2 {
 	font-size: 1rem;
-}
-
-pre {
-	font-size: 16px;
-	font-family: var(--font-mono);
-	background-color: rgba(255, 255, 255, 0.45);
-	border-radius: 3px;
-	box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
-	padding: 0.5em;
-	overflow-x: auto;
-	color: var(--text-color);
 }
 
 input,

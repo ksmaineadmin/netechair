@@ -165,7 +165,7 @@
 	}
 	nav {
 		font-family: var(--font-oswald);
-		font-size: 16px;
+		font-size: 1.5rem;
 		text-transform: uppercase;
 		letter-spacing: 1px;
 		ul {
@@ -179,7 +179,7 @@
 		}
 
 		a {
-			color: var(--primary-color);
+			color: var(--secondary-font-color);
 		}
 	}
 </style>
