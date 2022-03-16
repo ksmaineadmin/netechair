@@ -2,10 +2,6 @@
 	export const prerender = true;
 </script>
 
-<script>
-	import SlickButton from '../slick-button/slick-button.svelte';
-</script>
-
 <section data-aos="fade">
 	<article>
 		<div data-aos="fade-up" data-aos-delay="100" class="article__inner">
