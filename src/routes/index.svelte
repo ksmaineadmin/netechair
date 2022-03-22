@@ -10,6 +10,7 @@
 	import Affiliations from '../lib/components/affiliations/affiliations.svelte';
 	import CountUp from '../lib/components/count-up/count-up.svelte';
 	import Testimonials from '../lib/components/testimonials/testimonials.svelte';
+	import Capabilities from '../lib/components/capabilities/capabilities.svelte';
 </script>
 
 <svelte:head>
@@ -18,6 +19,7 @@
 
 <HomepageSlider />
 <ServicesSection />
+<Capabilities />
 
 <section class="counter__container">
 	<CountUp countMax="2000000" description="LBS of Duct a Year!" data-aos="fade-up">

@@ -16,7 +16,7 @@
 				procurement, fabrication, construction, 3D coordination and installation. Our comprehensive
 				services have transformed project execution.
 			</p>
-			<a href="/"
+			<a href="mailto:info@netechair.com"
 				>Request Pricing
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
 					><path
@@ -85,8 +85,10 @@
 		justify-content: space-around;
 		gap: 1rem;
 		align-items: center;
-		padding: 4rem 10rem;
-		min-height: 50vh;
+		padding: 6rem 10rem;
+		min-height: 70vh;
+		background-color: #000000;
+		background-image: linear-gradient(147deg, #000000 0%, #131313 74%);
 	}
 
 	@media screen and (max-width: $device-medium) {

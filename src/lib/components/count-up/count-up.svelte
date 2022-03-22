@@ -45,7 +45,7 @@
 	});
 </script>
 
-<div class="count__container">
+<div class="count__container" data-aos="fade-up">
 	<div class="count__icon">
 		<slot name="icon" />
 	</div>

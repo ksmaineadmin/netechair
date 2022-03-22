@@ -108,7 +108,7 @@
 	});
 </script>
 
-<section id="testim" class="testim">
+<section id="testim" class="testim" data-aos="fade-up">
 	<div class="wrap">
 		<span id="right-arrow" class="arrow right fa fa-chevron-right" />
 		<span id="left-arrow" class="arrow left fa fa-chevron-left " />
@@ -161,9 +161,7 @@
 		align-items: center;
 		height: 70vh;
 		background-color: #000000;
-		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.16'%3E%3Cpolygon fill='%23001e29' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23003c52' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23005a7b' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%230078a4' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%230096CD' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
-		background-attachment: fixed;
-		background-size: cover;
+		background-image: linear-gradient(147deg, #000000 0%, #131313 74%);
 	}
 
 	.testim .wrap {
