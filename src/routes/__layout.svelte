@@ -14,7 +14,9 @@
 
 	onMount(() => {
 		if (typeof window !== 'undefined') {
-			AOS.init();
+			AOS.init({
+				once: true
+			});
 		}
 	});
 </script>
