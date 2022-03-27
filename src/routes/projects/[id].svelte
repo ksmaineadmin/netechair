@@ -1,1 +1,0 @@
-<h1>Individual project</h1>

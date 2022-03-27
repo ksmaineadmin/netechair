@@ -137,6 +137,7 @@
 	h2 {
 		font-size: 3rem;
 		text-align: center;
+		color: var(--secondary-font-color);
 	}
 
 	h3 {
