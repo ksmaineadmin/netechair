@@ -19,32 +19,32 @@
 </svelte:head>
 
 <div class="content">
-	<h1>Contact</h1>
+	<h1 data-aos="fade-up">Contact</h1>
 
-	<p class="introlang">
+	<p class="introlang" data-aos="fade-up">
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ad quidem deleniti quaerat,
 		aliquam ullam laboriosam tempora beatae, accusamus autem laborum. Magnam neque pariatur illo
 		porro doloremque velit sequi illum.
 	</p>
 	<form name="contact" netlify>
-		<p>
+		<p data-aos="fade-up">
 			<label for="name">Name</label><input type="text" name="name" id="name" />
 		</p>
-		<p>
+		<p data-aos="fade-up">
 			<label for="email">Email</label><input type="email" name="email" />
 		</p>
-		<p>
+		<p data-aos="fade-up">
 			<label for="subject">Subject</label><input type="text" name="subject" />
 		</p>
-		<p>
+		<p data-aos="fade-up">
 			<label for="details">Details</label><textarea name="details" rows="7" />
 		</p>
-		<p>
+		<p data-aos="fade-up">
 			<label for="file">Add File</label>
 			<input name="file" type="file" />
 		</p>
 
-		<p>
+		<p data-aos="fade-up">
 			<button class="submit" type="submit">Submit</button>
 		</p>
 	</form>
