@@ -101,11 +101,21 @@
 		gap: 2rem;
 		grid-template-columns: 1fr 1fr;
 		justify-items: center;
-		width: 768px;
+		max-width: 768px;
 	}
 
 	.span-full {
 		grid-column: 1/-1;
 		width: 100%;
+	}
+
+	@media (max-width: 856px) {
+		section {
+			padding: 1rem;
+		}
+
+		.container {
+			gap: 1rem;
+		}
 	}
 </style>
