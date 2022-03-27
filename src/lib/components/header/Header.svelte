@@ -10,8 +10,10 @@
 			const visibility = nav.getAttribute('data-visible');
 			if (visibility === 'false') {
 				nav.setAttribute('data-visible', 'true');
+				navToggle.setAttribute('aria-expanded', 'true');
 			} else {
 				nav.setAttribute('data-visible', 'false');
+				navToggle.setAttribute('aria-expanded', 'false ');
 			}
 		});
 	});
@@ -232,6 +234,7 @@
 		}
 		nav[data-visible='false'] {
 			transform: translateX(100%);
+			transition: transform 350ms ease-out;
 		}
 		nav {
 			position: fixed;
@@ -239,6 +242,7 @@
 			background: rgba(0, 0, 0, 0.8);
 			backdrop-filter: blur(1rem);
 			transform: translateX(0);
+			transition: transform 350ms ease-out;
 
 			// firefox doesn't support backdrop-filter so we'll only apply to browsers that do
 			@supports (backdrop-filter: blur(1rem)) {
