@@ -1,12 +1,17 @@
+<script lang="js">
+	export let buttonLink;
+	export let buttonName;
+</script>
+
 <div class="button-container">
 	<div class="center">
-		<a href="/contact">
+		<a href={buttonLink}>
 			<button class="btn">
 				<svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
 					<polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
 					<polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
 				</svg>
-				<span>Contact Us</span>
+				<span>{buttonName}</span>
 			</button>
 		</a>
 	</div>
