@@ -216,6 +216,9 @@
 
 		a {
 			color: var(--primary-font-color);
+			&:hover {
+				color: var(--accent-color);
+			}
 		}
 	}
 
