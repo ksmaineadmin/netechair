@@ -89,7 +89,7 @@
 	</video>
 	<div class="overlay">
 		<h1>In Business for Over Thirty Five Years</h1>
-		<SlickButton />
+		<SlickButton buttonName={'Contact Us'} buttonLink="/contact" />
 	</div>
 </div>
 
