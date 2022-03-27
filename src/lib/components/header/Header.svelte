@@ -147,6 +147,9 @@
 				<li class:active={$page.url.pathname === '/projects'}>
 					<a sveltekit:prefetch href="/projects">Projects</a>
 				</li>
+				<li class:active={$page.url.pathname === '/contact'}>
+					<a sveltekit:prefetch href="/contact">Contact</a>
+				</li>
 				<!-- <li class:active={$page.url.pathname === '/'}>
 					<a href="#" class="rondedbutt"> Hire us. </a>
 				</li> -->
