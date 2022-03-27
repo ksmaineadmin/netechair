@@ -3,11 +3,16 @@
 	import { onMount } from 'svelte';
 
 	onMount(() => {
-		const primaryNav = document.getElementById('primary-navigation');
+		const nav = document.getElementById('nav');
 		const navToggle = document.querySelector('.mobile-nav-toggle');
 
 		navToggle.addEventListener('click', () => {
-			const visibility = primaryNav.getAttribute('data-visible');
+			const visibility = nav.getAttribute('data-visible');
+			if (visibility === 'false') {
+				nav.setAttribute('data-visible', 'true');
+			} else {
+				nav.setAttribute('data-visible', 'false');
+			}
 		});
 	});
 </script>
@@ -128,8 +133,8 @@
 				/></svg
 			>
 		</button>
-		<nav>
-			<ul id="primary-navigation" data-visible="false">
+		<nav data-visible="false" id="nav">
+			<ul id="primary-navigation" class="primary-navigation">
 				<li class:active={$page.url.pathname === '/'}><a sveltekit:prefetch href="/">Home</a></li>
 				<!-- <li class:active={$page.url.pathname === '/'}>
 					<a sveltekit:prefetch href="/">About</a>
@@ -151,7 +156,6 @@
 <style lang="scss">
 	header {
 		display: flex;
-		// height: 100px;
 		justify-content: space-between;
 		padding: 0 30px;
 		align-items: center;
@@ -193,7 +197,7 @@
 		text-transform: uppercase;
 		letter-spacing: 1px;
 
-		ul {
+		.primary-navigation {
 			list-style: none;
 			display: flex;
 			margin: 0;
@@ -226,12 +230,15 @@
 				fill: white;
 			}
 		}
+		nav[data-visible='false'] {
+			transform: translateX(100%);
+		}
 		nav {
 			position: fixed;
 			inset: 0 0 0 45%;
 			background: rgba(0, 0, 0, 0.8);
 			backdrop-filter: blur(1rem);
-			transform: translateX(100%);
+			transform: translateX(0);
 
 			// firefox doesn't support backdrop-filter so we'll only apply to browsers that do
 			@supports (backdrop-filter: blur(1rem)) {
@@ -242,11 +249,11 @@
 			z-index: 20;
 			padding: min(10vh, 10rem) 2rem;
 
-			// #primary-navigation[data-visible='true'] {
+			// .primary-navigation[data-visible='true'] {
 			// 	transform: translateX(100%);
 			// }
 
-			ul {
+			.primary-navigation {
 				display: flex;
 				flex-direction: column;
 
