@@ -1,5 +1,15 @@
-<script lang="ts">
+<script lang="js">
 	import { page } from '$app/stores';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		const primaryNav = document.getElementById('primary-navigation');
+		const navToggle = document.querySelector('.mobile-nav-toggle');
+
+		navToggle.addEventListener('click', () => {
+			const visibility = primaryNav.getAttribute('data-visible');
+		});
+	});
 </script>
 
 <header>
@@ -110,28 +120,38 @@
 	</div>
 
 	<div class="righthead">
+		<button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"
+			><span class="sr-only">Menu</span>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+				><path
+					d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"
+				/></svg
+			>
+		</button>
 		<nav>
-			<ul>
+			<ul id="primary-navigation" data-visible="false">
 				<li class:active={$page.url.pathname === '/'}><a sveltekit:prefetch href="/">Home</a></li>
-				<li class:active={$page.url.pathname === '/'}>
+				<!-- <li class:active={$page.url.pathname === '/'}>
 					<a sveltekit:prefetch href="/">About</a>
-				</li>
+				</li> -->
 				<li class:active={$page.url.pathname === '/'}>
 					<a sveltekit:prefetch href="/">Team</a>
 				</li>
 				<li class:active={$page.url.pathname === '/'}>
 					<a sveltekit:prefetch href="/">Projects</a>
 				</li>
+				<!-- <li class:active={$page.url.pathname === '/'}>
+					<a href="#" class="rondedbutt"> Hire us. </a>
+				</li> -->
 			</ul>
 		</nav>
-		<a href="#" class="rondedbutt"> Hire us. </a>
 	</div>
 </header>
 
 <style lang="scss">
 	header {
 		display: flex;
-		height: 100px;
+		// height: 100px;
 		justify-content: space-between;
 		padding: 0 30px;
 		align-items: center;
@@ -146,6 +166,10 @@
 				padding: 5px 20px;
 			}
 		}
+	}
+
+	.mobile-nav-toggle {
+		display: none;
 	}
 
 	.logo-holder {
@@ -168,18 +192,68 @@
 		font-size: 1.5rem;
 		text-transform: uppercase;
 		letter-spacing: 1px;
+
 		ul {
 			list-style: none;
+			display: flex;
 			margin: 0;
 			padding: 0;
+
 			li {
 				display: inline;
-				padding: 0 10px;
+				padding: 0 1rem;
 			}
 		}
 
 		a {
 			color: var(--primary-font-color);
+		}
+	}
+
+	@media (max-width: 856px) {
+		.mobile-nav-toggle {
+			position: absolute;
+			display: block;
+			background: transparent;
+			border: 0;
+			aspect-ratio: 1;
+			top: 1rem;
+			right: 1rem;
+			z-index: 9999;
+			svg {
+				height: 40px;
+				width: 40px;
+				fill: white;
+			}
+		}
+		nav {
+			position: fixed;
+			inset: 0 0 0 45%;
+			background: rgba(0, 0, 0, 0.8);
+			backdrop-filter: blur(1rem);
+			transform: translateX(100%);
+
+			// firefox doesn't support backdrop-filter so we'll only apply to browsers that do
+			@supports (backdrop-filter: blur(1rem)) {
+				background: rgba(0, 0, 0, 0.3);
+				backdrop-filter: blur(1rem);
+			}
+
+			z-index: 20;
+			padding: min(10vh, 10rem) 2rem;
+
+			// #primary-navigation[data-visible='true'] {
+			// 	transform: translateX(100%);
+			// }
+
+			ul {
+				display: flex;
+				flex-direction: column;
+
+				li {
+					padding: 1rem 0;
+				}
+			}
 		}
 	}
 </style>

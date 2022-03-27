@@ -80,8 +80,8 @@
 		justify-content: space-around;
 		align-items: stretch;
 		gap: 1rem;
-		padding: 1rem 10rem;
-		min-height: 70vh;
+		padding: 4rem 10rem;
+		min-height: 90vh;
 		background-color: #000000;
 		background-image: linear-gradient(147deg, #000000 0%, #131313 74%);
 

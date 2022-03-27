@@ -85,8 +85,8 @@
 		justify-content: space-around;
 		gap: 1rem;
 		align-items: center;
-		padding: 6rem 10rem;
-		min-height: 70vh;
+		padding: 10rem 10rem;
+		min-height: 90vh;
 		background-color: #000000;
 		background-image: linear-gradient(147deg, #000000 0%, #131313 74%);
 	}
