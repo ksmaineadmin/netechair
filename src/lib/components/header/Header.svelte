@@ -152,8 +152,8 @@
 				<li class:active={$page.url.pathname === '/'}>
 					<a sveltekit:prefetch href="/">Home</a>
 				</li>
-				<li class:active={$page.url.pathname === '/team'}>
-					<a sveltekit:prefetch href="/team">Team</a>
+				<li>
+					<a class:active={$page.url.pathname === '/team'} sveltekit:prefetch href="/team">Team</a>
 				</li>
 				<li class:active={$page.url.pathname === '/projects'}>
 					<a sveltekit:prefetch href="/projects">Projects</a>
@@ -227,6 +227,9 @@
 		a {
 			color: var(--primary-font-color);
 			&:hover {
+				color: var(--accent-color);
+			}
+			&.active {
 				color: var(--accent-color);
 			}
 		}
