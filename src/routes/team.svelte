@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-	<title>New England Tech Air - Team</title>
+	<title>Tech Air - Our Team</title>
 </svelte:head>
 
 <section>

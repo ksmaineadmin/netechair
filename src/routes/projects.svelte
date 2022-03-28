@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Projects</title>
+	<title>Tech Air - Projects</title>
 </svelte:head>
 
 <div class="content">

@@ -13,7 +13,7 @@
 </script>
 
 <svelte:head>
-	<title>New England Tech Air - HVAC, Duct Construction</title>
+	<title>Tech Air - HVAC, Duct Construction</title>
 </svelte:head>
 
 <HomepageSlider />
