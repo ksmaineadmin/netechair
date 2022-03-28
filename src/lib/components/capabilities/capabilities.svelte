@@ -123,7 +123,6 @@
 		}
 
 		@media (max-width: $device-medium) {
-			grid-template-columns: 1fr;
 			padding: 1rem;
 		}
 	}
