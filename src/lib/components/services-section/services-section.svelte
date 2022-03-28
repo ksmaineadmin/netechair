@@ -93,7 +93,7 @@
 
 	@media screen and (max-width: $device-medium) {
 		section {
-			padding: 1rem 1rem;
+			padding: 4rem 1rem;
 			gap: 1rem;
 		}
 

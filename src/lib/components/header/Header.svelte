@@ -163,6 +163,8 @@
 </header>
 
 <style lang="scss">
+	@import '../../../variables.scss';
+
 	header {
 		display: flex;
 		justify-content: space-between;
@@ -226,7 +228,7 @@
 		}
 	}
 
-	@media (max-width: 856px) {
+	@media (max-width: $device-medium) {
 		.mobile-nav-toggle {
 			position: absolute;
 			display: block;

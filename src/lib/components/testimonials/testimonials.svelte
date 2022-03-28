@@ -109,6 +109,7 @@
 </script>
 
 <section id="testim" class="testim" data-aos="fade-up">
+	<h2 class="span-full" data-aos="fade-up">Testimonials</h2>
 	<div class="wrap">
 		<span id="right-arrow" class="arrow right fa fa-chevron-right" />
 		<span id="left-arrow" class="arrow left fa fa-chevron-left " />
@@ -130,38 +131,30 @@
 					would work with Tech Air anywhere.""
 				</p>
 			</div>
-			<div>
-				<div class="img">
-					<img
-						src="https://cdn.geekwire.com/wp-content/uploads/2014/09/elonmusk.jpeg"
-						alt="Bill Stevens Headshot"
-					/>
-				</div>
-				<h2>Bill Stevens</h2>
-				<p>
-					"Tech Air understands complex projects, they understand teamwork and they understand being
-					part of the solution, they have been an integral part of Robins & Mortons Lean journey and
-					a big part of the success we have had over the last decade. They bring a
-					relationship-based approach that makes our teams better. We haven't only built millions of
-					SF of Healthcare projects together but we have collaborated to improve the industry. I
-					would work with Tech Air anywhere.""
-				</p>
-			</div>
 		</div>
 		<div id="testim-dots" class="dots">
 			<div class="dot active" />
-			<div class="dot" />
 		</div>
 	</div>
 </section>
 
 <style>
 	section {
-		display: flex;
-		align-items: center;
-		height: 70vh;
+		display: grid;
+		grid-template-columns: 1fr;
+		min-height: 70vh;
 		background-color: #000000;
 		background-image: linear-gradient(147deg, #000000 0%, #131313 74%);
+	}
+
+	h2 {
+		font-size: 3rem;
+		text-align: center;
+		color: var(--secondary-font-color);
+	}
+
+	.span-full {
+		grid-column: 1/-1;
 	}
 
 	.testim .wrap {

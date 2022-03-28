@@ -74,6 +74,8 @@
 </section>
 
 <style lang="scss">
+	@import '../../../variables.scss';
+
 	section {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -87,6 +89,11 @@
 
 		p {
 			color: var(--secondary-font-color);
+		}
+
+		@media (max-width: $device-medium) {
+			grid-template-columns: 1fr;
+			padding: 1rem;
 		}
 	}
 
