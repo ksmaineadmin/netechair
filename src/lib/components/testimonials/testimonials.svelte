@@ -144,14 +144,16 @@
 	section {
 		display: grid;
 		grid-template-columns: 1fr;
-		min-height: 70vh;
+		grid-template-rows: auto 1fr;
+		min-height: 60vh;
 		background-color: #000000;
 		background-image: linear-gradient(147deg, #000000 0%, #131313 74%);
-		padding: 1rem;
+		padding: 3rem 1rem 1rem 1rem;
 	}
 
 	h2 {
 		@include section-header;
+		margin: 0;
 	}
 
 	.span-full {
