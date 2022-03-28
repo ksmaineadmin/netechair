@@ -5,8 +5,16 @@
 	onMount(() => {
 		const nav = document.getElementById('nav');
 		const navToggle = document.querySelector('.mobile-nav-toggle');
+		const navList = document.getElementById('primary-navigation');
+		const navItems = Array.from(navList.children);
 
-		navToggle.addEventListener('click', () => {
+		navToggle.addEventListener('click', () => toggleMenu());
+
+		navItems.forEach((item) => {
+			item.addEventListener('click', () => toggleMenu());
+		});
+
+		const toggleMenu = () => {
 			const visibility = nav.getAttribute('data-visible');
 			if (visibility === 'false') {
 				nav.setAttribute('data-visible', 'true');
@@ -15,7 +23,7 @@
 				nav.setAttribute('data-visible', 'false');
 				navToggle.setAttribute('aria-expanded', 'false ');
 			}
-		});
+		};
 	});
 </script>
 
@@ -137,10 +145,9 @@
 		</button>
 		<nav data-visible="false" id="nav">
 			<ul id="primary-navigation" class="primary-navigation">
-				<li class:active={$page.url.pathname === '/'}><a sveltekit:prefetch href="/">Home</a></li>
-				<!-- <li class:active={$page.url.pathname === '/'}>
-					<a sveltekit:prefetch href="/">About</a>
-				</li> -->
+				<li class:active={$page.url.pathname === '/'}>
+					<a sveltekit:prefetch href="/">Home</a>
+				</li>
 				<li class:active={$page.url.pathname === '/team'}>
 					<a sveltekit:prefetch href="/team">Team</a>
 				</li>
@@ -150,9 +157,6 @@
 				<li class:active={$page.url.pathname === '/contact'}>
 					<a sveltekit:prefetch href="/contact">Contact</a>
 				</li>
-				<!-- <li class:active={$page.url.pathname === '/'}>
-					<a href="#" class="rondedbutt"> Hire us. </a>
-				</li> -->
 			</ul>
 		</nav>
 	</div>
@@ -232,6 +236,7 @@
 			top: 1rem;
 			right: 1rem;
 			z-index: 9999;
+			cursor: pointer;
 			svg {
 				height: 40px;
 				width: 40px;
