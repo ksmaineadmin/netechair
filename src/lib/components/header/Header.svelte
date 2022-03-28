@@ -271,7 +271,11 @@
 				flex-direction: column;
 
 				li {
-					padding: 1rem 0;
+					padding: 1.5rem 0;
+
+					a {
+						font-size: 3rem;
+					}
 				}
 			}
 		}
