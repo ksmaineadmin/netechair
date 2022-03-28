@@ -40,7 +40,7 @@
 				challenging, and technically difficult projects on time while maintaining safety as our #1
 				priority.
 			</p>
-			<a href="/"
+			<a sveltekit:prefetch href="/projects"
 				>View Projects
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
 					><path
@@ -64,7 +64,7 @@
 				and build challenging and unique projects that are re-shaping the landscape of New England.
 				Come build a better future with us.
 			</p>
-			<a href="/"
+			<a sveltekit:prefetch href="/contact"
 				>Career Details
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
 					><path
@@ -87,7 +87,7 @@
 		align-items: center;
 		padding: 1rem 10rem;
 		min-height: 70vh;
-		background-color: #000000;
+		background: transparent;
 		background-image: linear-gradient(147deg, #000000 0%, #131313 74%);
 
 		@media (max-width: $device-large) {

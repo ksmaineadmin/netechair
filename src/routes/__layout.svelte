@@ -28,7 +28,7 @@
 </main>
 
 <footer>
-	<p>Copyright {currentYear} New England Tech Air</p>
+	<p>Copyright {currentYear} Tech Air</p>
 </footer>
 
 <style lang="scss">
