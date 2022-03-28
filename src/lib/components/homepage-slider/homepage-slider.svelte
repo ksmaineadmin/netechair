@@ -84,7 +84,7 @@
 </script>
 
 <div id="video-container">
-	<video preload="auto" autoplay loop muted width="1440" height="810">
+	<video preload="auto" autoplay="autoplay" loop muted width="1440" height="810">
 		<source src="homepage-videos/oil-pipes.mp4" type="video/mp4" />
 	</video>
 	<div class="overlay">

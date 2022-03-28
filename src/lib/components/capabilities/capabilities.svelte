@@ -75,8 +75,7 @@
 			<li>Many more</li>
 		</ul>
 	</article>
-
-	<div class="counter__container span-full">
+	<div class="counters">
 		<CountUp countMax="2000000" description="LBS of Duct a Year!" data-aos="fade-up">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" slot="icon">
 				<path
@@ -107,7 +106,7 @@
 
 	section {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+		grid-template-columns: repeat(4, 1fr);
 		justify-content: space-around;
 		align-items: stretch;
 		gap: 1rem;
@@ -122,13 +121,17 @@
 			color: var(--secondary-font-color);
 		}
 
-		@media (max-width: $device-medium) {
+		@media (max-width: $device-large) {
 			padding: 1rem;
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@media (max-width: $device-medium) {
+			grid-template-columns: 1fr;
 		}
 	}
 
 	article {
-		height: -webkit-fill-available;
 		background: var(--surface-color);
 		border-radius: 8px;
 		padding: 2rem;
@@ -184,19 +187,23 @@
 		grid-column: 1/-1;
 	}
 
-	.counter {
-		&__container {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-			justify-content: space-around;
-			gap: 1rem;
-			align-items: center;
-			padding: 4rem 2rem;
-
-			@media screen and (max-width: $device-large) {
-				row-gap: 8rem;
-				padding: 4rem 10rem;
-			}
-		}
+	.counters {
+		grid-column-start: 1;
 	}
+
+	// .counter {
+	// 	&__container {
+	// 		display: grid;
+	// 		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	// 		justify-content: space-around;
+	// 		gap: 1rem;
+	// 		align-items: center;
+	// 		padding: 4rem 2rem;
+
+	// 		@media screen and (max-width: $device-large) {
+	// 			row-gap: 8rem;
+	// 			padding: 4rem 10rem;
+	// 		}
+	// 	}
+	// }
 </style>

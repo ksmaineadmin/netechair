@@ -57,6 +57,10 @@
 			@media screen and (max-width: $device-xlarge) {
 				grid-template-columns: 1fr 1fr;
 			}
+
+			@media (max-width: $device-medium) {
+				grid-template-columns: 1fr;
+			}
 		}
 
 		&__box {

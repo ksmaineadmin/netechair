@@ -1,5 +1,9 @@
+@mixin clamp-font() {
+	font-size: clamp(1rem, 3rem, 1.5rem);
+}
+
 @mixin section-header {
-	font-size: 3rem;
+	@include clamp-font();
 	text-align: center;
 	color: var(--secondary-font-color);
 	margin-top: 2rem;

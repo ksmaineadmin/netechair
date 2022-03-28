@@ -8,7 +8,6 @@
 	import HomepageSlider from '$lib/components/homepage-slider/homepage-slider.svelte';
 	import ServicesSection from '$lib/components/services-section/services-section.svelte';
 	import Affiliations from '../lib/components/affiliations/affiliations.svelte';
-	import CountUp from '../lib/components/count-up/count-up.svelte';
 	import Testimonials from '../lib/components/testimonials/testimonials.svelte';
 	import Capabilities from '../lib/components/capabilities/capabilities.svelte';
 </script>

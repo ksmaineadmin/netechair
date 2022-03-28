@@ -274,7 +274,7 @@
 					padding: 1.5rem 0;
 
 					a {
-						font-size: 3rem;
+						font-size: clamp(1rem, 3rem, 1.5rem);
 					}
 				}
 			}

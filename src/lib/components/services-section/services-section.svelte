@@ -81,7 +81,7 @@
 
 	section {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+		grid-template-columns: repeat(3, 1fr);
 		justify-content: space-around;
 		gap: 1rem;
 		align-items: center;
@@ -89,16 +89,12 @@
 		min-height: 70vh;
 		background-color: #000000;
 		background-image: linear-gradient(147deg, #000000 0%, #131313 74%);
-	}
 
-	@media screen and (max-width: $device-medium) {
-		section {
+		@media (max-width: $device-large) {
+			grid-template-columns: 1fr;
+			padding: 2rem 10rem;
 			padding: 4rem 1rem;
 			gap: 1rem;
-		}
-
-		article {
-			width: 100%;
 		}
 	}
 
@@ -154,6 +150,16 @@
 
 		&:hover {
 			border-bottom: 4px solid var(--accent-color);
+		}
+
+		@media screen and (max-width: $device-medium) {
+			max-height: none;
+			height: auto;
+			padding: 0.5rem;
+
+			svg {
+				height: 64px;
+			}
 		}
 	}
 
