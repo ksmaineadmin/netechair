@@ -17,9 +17,11 @@
 		const toggleMenu = () => {
 			const visibility = nav.getAttribute('data-visible');
 			if (visibility === 'false') {
+				navToggle.classList.add('active');
 				nav.setAttribute('data-visible', 'true');
 				navToggle.setAttribute('aria-expanded', 'true');
 			} else {
+				navToggle.classList.remove('active');
 				nav.setAttribute('data-visible', 'false');
 				navToggle.setAttribute('aria-expanded', 'false ');
 			}
@@ -135,13 +137,15 @@
 	</div>
 
 	<div class="righthead">
-		<button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"
-			><span class="sr-only">Menu</span>
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-				><path
-					d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"
-				/></svg
-			>
+		<button
+			class="hamburger mobile-nav-toggle"
+			aria-controls="primary-navigation"
+			aria-expanded="false"
+		>
+			<span class="sr-only">Menu</span>
+			<span class="hamburger-line hamburger-line-1" />
+			<span class="hamburger-line hamburger-line-2" />
+			<span class="hamburger-line hamburger-line-3" />
 		</button>
 		<nav data-visible="false" id="nav">
 			<ul id="primary-navigation" class="primary-navigation">
@@ -232,19 +236,12 @@
 		.mobile-nav-toggle {
 			position: absolute;
 			display: block;
-			background: transparent;
-			border: 0;
-			aspect-ratio: 1;
 			top: 1rem;
 			right: 1rem;
 			z-index: 9999;
 			cursor: pointer;
-			svg {
-				height: 40px;
-				width: 40px;
-				fill: white;
-			}
 		}
+
 		nav[data-visible='false'] {
 			transform: translateX(100%);
 			transition: transform 350ms ease-out;
@@ -265,10 +262,6 @@
 
 			z-index: 20;
 			padding: min(10vh, 10rem) 2rem;
-
-			// .primary-navigation[data-visible='true'] {
-			// 	transform: translateX(100%);
-			// }
 
 			.primary-navigation {
 				display: flex;
