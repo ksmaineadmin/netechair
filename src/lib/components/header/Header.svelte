@@ -204,6 +204,10 @@
 			.hammah {
 				fill: transparent;
 			}
+
+			@media (max-width: $device-xsmall) {
+				width: 220px;
+			}
 		}
 	}
 	nav {

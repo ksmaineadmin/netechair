@@ -1,5 +1,5 @@
 @mixin clamp-font() {
-	font-size: clamp(1rem, 3rem, 1.5rem);
+	font-size: clamp(1rem, 3rem, 3rem);
 }
 
 @mixin section-header {
