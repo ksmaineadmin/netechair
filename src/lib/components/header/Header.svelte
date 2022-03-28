@@ -225,7 +225,7 @@
 		}
 
 		a {
-			color: var(--primary-font-color);
+			color: var(--secondary-font-color);
 			&:hover {
 				color: var(--accent-color);
 			}
