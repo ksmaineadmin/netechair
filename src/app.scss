@@ -7,6 +7,7 @@
 	--primary-font-color: var(--pure-white);
 	--secondary-font-color: #adadad;
 	--surface-color: #333333;
+	--surface-color--light: #cecece;
 	--accent-color: #0096cd;
 	--text-color: #444444;
 }
@@ -82,6 +83,9 @@ button:focus:not(:focus-visible) {
 	}
 }
 
+.span-full {
+	grid-column: 1/-1;
+}
 // global menu CSS
 .hamburger {
 	width: 40px;

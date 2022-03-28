@@ -85,8 +85,8 @@
 		justify-content: space-around;
 		gap: 1rem;
 		align-items: center;
-		padding: 10rem 10rem;
-		min-height: 90vh;
+		padding: 1rem 10rem;
+		min-height: 70vh;
 		background-color: #000000;
 		background-image: linear-gradient(147deg, #000000 0%, #131313 74%);
 	}
@@ -104,6 +104,7 @@
 
 	article {
 		height: -webkit-fill-available;
+		max-height: 500px;
 		background: var(--surface-color);
 		border-radius: 8px;
 		padding: 2rem;

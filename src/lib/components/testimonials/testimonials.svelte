@@ -138,19 +138,20 @@
 	</div>
 </section>
 
-<style>
+<style lang="scss">
+	@import '../../../mixins.scss';
+
 	section {
 		display: grid;
 		grid-template-columns: 1fr;
 		min-height: 70vh;
 		background-color: #000000;
 		background-image: linear-gradient(147deg, #000000 0%, #131313 74%);
+		padding: 1rem;
 	}
 
 	h2 {
-		font-size: 3rem;
-		text-align: center;
-		color: var(--secondary-font-color);
+		@include section-header;
 	}
 
 	.span-full {
@@ -160,9 +161,8 @@
 	.testim .wrap {
 		position: relative;
 		width: 100%;
-		max-width: 1020px;
-		padding: 40px 20px;
 		margin: auto;
+		max-width: 768px;
 	}
 
 	.testim .arrow {

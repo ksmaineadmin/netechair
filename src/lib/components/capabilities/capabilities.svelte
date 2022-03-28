@@ -75,6 +75,7 @@
 
 <style lang="scss">
 	@import '../../../variables.scss';
+	@import '../../../mixins.scss';
 
 	section {
 		display: grid;
@@ -82,7 +83,7 @@
 		justify-content: space-around;
 		align-items: stretch;
 		gap: 1rem;
-		padding: 4rem 10rem;
+		padding: 1rem 5rem;
 		min-height: 90vh;
 		background-color: #000000;
 		background-image: linear-gradient(147deg, #000000 0%, #131313 74%);
@@ -142,9 +143,7 @@
 	}
 
 	h2 {
-		font-size: 3rem;
-		text-align: center;
-		color: var(--secondary-font-color);
+		@include section-header;
 	}
 
 	h3 {
