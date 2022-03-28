@@ -193,13 +193,13 @@
 
 	.logo-holder {
 		svg {
-			width: 200px;
+			width: 300px;
 			padding: 15px 15px 15px 0;
 			.st0 {
-				fill: var(--accent-color);
+				fill: var(--secondary-font-color);
 			}
 			.st1 {
-				fill: var(--primary-color);
+				fill: var(--accent-color);
 			}
 			.hammah {
 				fill: transparent;
