@@ -16,7 +16,7 @@
 				procurement, fabrication, construction, 3D coordination and installation. Our comprehensive
 				services have transformed project execution.
 			</p>
-			<a href="mailto:info@netechair.com"
+			<a sveltekit:prefetch href="/contact"
 				>Request Pricing
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
 					><path
