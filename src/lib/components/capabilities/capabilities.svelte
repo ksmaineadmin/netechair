@@ -188,22 +188,14 @@
 	}
 
 	.counters {
-		grid-column-start: 1;
+		display: flex;
+		justify-content: space-around;
+		grid-column: 1/-1;
+		padding: 2rem;
+
+		@media (max-width: $device-medium) {
+			flex-direction: column;
+			gap: 3rem;
+		}
 	}
-
-	// .counter {
-	// 	&__container {
-	// 		display: grid;
-	// 		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-	// 		justify-content: space-around;
-	// 		gap: 1rem;
-	// 		align-items: center;
-	// 		padding: 4rem 2rem;
-
-	// 		@media screen and (max-width: $device-large) {
-	// 			row-gap: 8rem;
-	// 			padding: 4rem 10rem;
-	// 		}
-	// 	}
-	// }
 </style>
