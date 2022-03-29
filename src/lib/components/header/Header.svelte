@@ -44,7 +44,7 @@
 
 <header id="header">
 	<div class="logo-holder">
-		<a href="/">
+		<a href="/" aria-label="Back to the homepage">
 			<svg
 				version="1.1"
 				xmlns="http://www.w3.org/2000/svg"
