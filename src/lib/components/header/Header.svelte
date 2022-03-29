@@ -229,6 +229,7 @@
 	}
 	nav {
 		font-family: var(--font-oswald);
+		font-display: swap;
 		font-size: 1.5rem;
 		text-transform: uppercase;
 		letter-spacing: 1px;

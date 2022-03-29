@@ -1,5 +1,6 @@
 :root {
 	font-family: 'Noto Sans', sans-serif;
+	font-display: swap;
 	--background-color: #121212;
 	--font-oswald: 'Oswald', sans-serif;
 	--pure-white: #ffffff;
@@ -34,6 +35,7 @@ h1,
 h2,
 h3 {
 	font-family: var(--font-oswald);
+	font-display: swap;
 	text-transform: uppercase;
 }
 
@@ -71,6 +73,7 @@ input,
 button {
 	font-size: inherit;
 	font-family: inherit;
+	font-display: swap;
 }
 
 button:focus:not(:focus-visible) {

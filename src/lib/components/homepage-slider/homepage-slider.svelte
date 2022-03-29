@@ -141,7 +141,6 @@
 			max-width: 30rem;
 			font-weight: 700;
 			color: #fff;
-			font-family: 'Raleway', sans-serif;
 			line-height: 1.3;
 		}
 
