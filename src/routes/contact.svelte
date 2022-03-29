@@ -7,7 +7,7 @@
 </svelte:head>
 
 <div class="content">
-	<h1 data-aos="fade-up">Contact</h1>
+	<h1 data-aos="fade-up" class="page-header">Contact</h1>
 
 	<p class="introlang" data-aos="fade-up">
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ad quidem deleniti quaerat,
@@ -39,12 +39,18 @@
 </div>
 
 <style lang="scss">
+	@import '../mixins.scss';
+
+	.page-header {
+		@include section-header();
+	}
 	.content {
 		max-width: 900px;
 		width: 100%;
 		padding: 0 15px;
 		margin: 0 auto 50px;
 		.introlang {
+			color: var(--secondary-font-color);
 			margin-bottom: 60px;
 			font-size: 18px;
 			line-height: 35px;

@@ -116,10 +116,7 @@
 		<div id="testim-content" class="cont">
 			<div class="active">
 				<div class="img">
-					<img
-						src="https://cdn.geekwire.com/wp-content/uploads/2014/09/elonmusk.jpeg"
-						alt="Bill Stevens Headshot"
-					/>
+					<img src="images/robins-and-morton.png" alt="Bill Stevens Headshot" />
 				</div>
 				<h2>Bill Stevens</h2>
 				<p>
@@ -266,8 +263,8 @@
 
 	.testim .cont div .img img {
 		display: block;
-		width: 100px;
-		height: 100px;
+		width: 48px;
+		height: 48px;
 		margin: auto;
 		border-radius: 50%;
 	}

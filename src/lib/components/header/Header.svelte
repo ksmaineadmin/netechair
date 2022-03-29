@@ -149,17 +149,21 @@
 		</button>
 		<nav data-visible="false" id="nav">
 			<ul id="primary-navigation" class="primary-navigation">
-				<li class:active={$page.url.pathname === '/'}>
-					<a sveltekit:prefetch href="/">Home</a>
+				<li>
+					<a class:active={$page.url.pathname === '/'} sveltekit:prefetch href="/">Home</a>
 				</li>
 				<li>
 					<a class:active={$page.url.pathname === '/team'} sveltekit:prefetch href="/team">Team</a>
 				</li>
-				<li class:active={$page.url.pathname === '/projects'}>
-					<a sveltekit:prefetch href="/projects">Projects</a>
+				<li>
+					<a class:active={$page.url.pathname === '/projects'} sveltekit:prefetch href="/projects"
+						>Projects</a
+					>
 				</li>
-				<li class:active={$page.url.pathname === '/contact'}>
-					<a sveltekit:prefetch href="/contact">Contact</a>
+				<li>
+					<a class:active={$page.url.pathname === '/contact'} sveltekit:prefetch href="/contact"
+						>Contact</a
+					>
 				</li>
 			</ul>
 		</nav>
@@ -229,7 +233,7 @@
 		}
 
 		a {
-			color: var(--secondary-font-color);
+			color: var(--pure-white);
 			&:hover {
 				color: var(--accent-color);
 			}
