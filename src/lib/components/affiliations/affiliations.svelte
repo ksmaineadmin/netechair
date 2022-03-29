@@ -2,16 +2,27 @@
 	<h2 class="span-full" data-aos="fade-up">Affiliations</h2>
 	<div class="affiliations__container" data-aos="fade-up">
 		<div data-aos="fade-up" data-aos-delay="0" class="affiliations__box">
-			<img src="images/abc_thumb.png" alt="ABC Industries Logo" data-aos="fade-up" />
+			<img
+				src="images/abc_thumb.png"
+				alt="ABC Industries Logo"
+				data-aos="fade-up"
+				width="150"
+				height="109"
+			/>
 		</div>
 		<div data-aos="fade-up" data-aos-delay="100" class="affiliations__box">
-			<img src="images/ashrae_thumb.png" alt="ASHRAE Professional association logo" />
+			<img
+				src="images/ashrae_thumb.png"
+				alt="ASHRAE Professional association logo"
+				width="150"
+				height="109"
+			/>
 		</div>
 		<div data-aos="fade-up" data-aos-delay="200" class="affiliations__box">
-			<img src="images/osha_thumb.png" alt="OSHA logo" />
+			<img src="images/osha_thumb.png" alt="OSHA logo" width="150" height="109" />
 		</div>
 		<div data-aos="fade-up" data-aos-delay="300" class="affiliations__box">
-			<img src="images/smacna_thumb.png" alt="SMACNA Logo" />
+			<img src="images/smacna_thumb.png" alt="SMACNA Logo" width="150" height="109" />
 		</div>
 	</div>
 </section>
