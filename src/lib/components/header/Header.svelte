@@ -147,7 +147,7 @@
 			<span class="hamburger-line hamburger-line-2" />
 			<span class="hamburger-line hamburger-line-3" />
 		</button>
-		<nav data-visible="false" id="nav">
+		<nav id="nav">
 			<ul id="primary-navigation" class="primary-navigation">
 				<li>
 					<a class:active={$page.url.pathname === '/'} sveltekit:prefetch href="/">Home</a>
