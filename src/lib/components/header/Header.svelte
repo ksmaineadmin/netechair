@@ -3,6 +3,8 @@
 	import { onMount } from 'svelte';
 
 	onMount(() => {
+		let mql = window.matchMedia('(max-width: 1024px)');
+		const header = document.getElementById('header');
 		const nav = document.getElementById('nav');
 		const navToggle = document.querySelector('.mobile-nav-toggle');
 		const navList = document.getElementById('primary-navigation');
@@ -20,16 +22,27 @@
 				navToggle.classList.add('active');
 				nav.setAttribute('data-visible', 'true');
 				navToggle.setAttribute('aria-expanded', 'true');
+				header.classList.add('sticky');
 			} else {
 				navToggle.classList.remove('active');
 				nav.setAttribute('data-visible', 'false');
-				navToggle.setAttribute('aria-expanded', 'false ');
+				navToggle.setAttribute('aria-expanded', 'false');
+				header.classList.remove('sticky');
 			}
 		};
+
+		// Set the appropriate data attribute based on matchMedia boolean
+		if (mql) {
+			nav.setAttribute('data-visible', 'false');
+			navToggle.setAttribute('aria-expanded', 'false');
+		} else {
+			nav.setAttribute('data-visible', 'true');
+			navToggle.setAttribute('aria-expanded', 'true');
+		}
 	});
 </script>
 
-<header>
+<header id="header">
 	<div class="logo-holder">
 		<a href="/">
 			<svg
@@ -147,7 +160,7 @@
 			<span class="hamburger-line hamburger-line-2" />
 			<span class="hamburger-line hamburger-line-3" />
 		</button>
-		<nav id="nav">
+		<nav id="nav" data-visible="false">
 			<ul id="primary-navigation" class="primary-navigation">
 				<li>
 					<a class:active={$page.url.pathname === '/'} sveltekit:prefetch href="/">Home</a>
@@ -257,6 +270,7 @@
 			transform: translateX(100%);
 			transition: transform 350ms ease-out;
 		}
+
 		nav {
 			position: fixed;
 			inset: 0 0 0 45%;
@@ -286,6 +300,21 @@
 					}
 				}
 			}
+		}
+	}
+
+	.sticky[data-visible='true'] {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 9999;
+		background: black;
+		backdrop-filter: blur(1rem);
+
+		// firefox doesn't support backdrop-filter so we'll only apply to browsers that do
+		@supports (backdrop-filter: blur(1rem)) {
+			background: rgba(0, 0, 0, 0.3);
+			backdrop-filter: blur(1rem);
 		}
 	}
 </style>
