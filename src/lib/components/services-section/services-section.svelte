@@ -3,6 +3,7 @@
 </script>
 
 <section data-aos="fade">
+	<h2 class="span-full" data-aos="fade-up">Welcome to Tech Air</h2>
 	<article>
 		<div data-aos="fade-up" data-aos-delay="100" class="article__inner">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
@@ -78,14 +79,16 @@
 
 <style lang="scss">
 	@import '../../../variables.scss';
+	@import '../../../mixins.scss';
 
 	section {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: auto 1fr;
 		justify-content: space-around;
+		align-items: start;
 		gap: 1rem;
-		align-items: center;
-		padding: 1rem 10rem;
+		padding: 1rem 10rem 4rem 10rem;
 		min-height: 70vh;
 		background: transparent;
 		background-image: linear-gradient(147deg, #000000 0%, #131313 74%);
@@ -96,6 +99,11 @@
 			padding: 4rem 1rem;
 			gap: 1rem;
 		}
+	}
+
+	h2 {
+		@include section-header;
+		margin-bottom: 2rem;
 	}
 
 	article {
