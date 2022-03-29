@@ -4,11 +4,22 @@
 
 	onMount(() => {
 		let mql = window.matchMedia('(max-width: 1024px)');
+		let lastScrollTop;
 		const header = document.getElementById('header');
 		const nav = document.getElementById('nav');
 		const navToggle = document.querySelector('.mobile-nav-toggle');
 		const navList = document.getElementById('primary-navigation');
 		const navItems = Array.from(navList.children);
+
+		window.addEventListener('scroll', () => {
+			var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+			if (scrollTop > lastScrollTop) {
+				header.style.top = '-120px';
+			} else {
+				header.style.top = '0';
+			}
+			lastScrollTop = scrollTop;
+		});
 
 		navToggle.addEventListener('click', () => toggleMenu());
 
@@ -185,12 +196,22 @@
 
 <style lang="scss">
 	@import '../../../variables.scss';
+	@import '../../../mixins.scss';
 
 	header {
 		display: flex;
 		justify-content: space-between;
 		padding: 0 30px;
 		align-items: center;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		transition: 0.5s;
+		z-index: 20;
+		background-color: var(--surface-color);
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
 		.righthead {
 			display: flex;
 			align-items: center;
@@ -275,17 +296,9 @@
 		nav {
 			position: fixed;
 			inset: 0 0 0 45%;
-			background: rgba(0, 0, 0, 0.8);
-			backdrop-filter: blur(1rem);
 			transform: translateX(0);
 			transition: transform 350ms ease-out;
-
-			// firefox doesn't support backdrop-filter so we'll only apply to browsers that do
-			@supports (backdrop-filter: blur(1rem)) {
-				background: rgba(0, 0, 0, 0.3);
-				backdrop-filter: blur(1rem);
-			}
-
+			@include supports-backdrop-filter();
 			z-index: 20;
 			padding: min(10vh, 10rem) 2rem;
 
@@ -309,13 +322,6 @@
 		top: 0;
 		width: 100%;
 		z-index: 9999;
-		background: black;
-		backdrop-filter: blur(1rem);
-
-		// firefox doesn't support backdrop-filter so we'll only apply to browsers that do
-		@supports (backdrop-filter: blur(1rem)) {
-			background: rgba(0, 0, 0, 0.3);
-			backdrop-filter: blur(1rem);
-		}
+		@include supports-backdrop-filter();
 	}
 </style>

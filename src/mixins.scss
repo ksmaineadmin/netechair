@@ -9,3 +9,12 @@
 	margin-top: 2rem;
 	padding: 0;
 }
+
+@mixin supports-backdrop-filter() {
+	background: rgba(0, 0, 0, 0.8);
+	backdrop-filter: blur(1rem);
+	@supports (backdrop-filter: blur(1rem)) {
+		background: rgba(0, 0, 0, 0.3);
+		backdrop-filter: blur(1rem);
+	}
+}
