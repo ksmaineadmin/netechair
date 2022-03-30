@@ -80,6 +80,7 @@
 
 <style lang="scss">
 	@import '../mixins.scss';
+	@import '../variables.scss';
 
 	.page-header {
 		@include section-header();
@@ -100,6 +101,10 @@
 			color: var(--secondary-font-color);
 			margin: 0;
 		}
+
+		@media (max-width: $device-medium) {
+			padding: 1rem;
+		}
 	}
 	.container {
 		margin: 0 auto;
@@ -113,15 +118,5 @@
 	.span-full {
 		grid-column: 1/-1;
 		width: 100%;
-	}
-
-	@media (max-width: 856px) {
-		section {
-			padding: 1rem;
-		}
-
-		.container {
-			gap: 1rem;
-		}
 	}
 </style>

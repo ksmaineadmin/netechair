@@ -42,9 +42,14 @@
 
 <style lang="scss">
 	@import '../mixins.scss';
+	@import '../variables.scss';
 
 	section {
 		padding: 1rem 10rem;
+
+		@media (max-width: $device-medium) {
+			padding: 1rem;
+		}
 	}
 
 	.page-header {

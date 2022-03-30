@@ -66,6 +66,7 @@
 
 <style lang="scss">
 	@import '../mixins.scss';
+	@import '../variables.scss';
 
 	.page-header {
 		@include section-header();
@@ -74,6 +75,10 @@
 
 	section {
 		padding: 1rem 10rem;
+
+		@media (max-width: $device-medium) {
+			padding: 1rem;
+		}
 	}
 
 	.content {
