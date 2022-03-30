@@ -6,67 +6,74 @@
 	<title>Tech Air - Projects</title>
 </svelte:head>
 
-<div class="content">
-	<h1 data-aos="fade-up" class="page-header">Projects</h1>
-	<p class="introlang">
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia minima placeat perspiciatis
-		a illum labore laboriosam, possimus cupiditate, dignissimos provident, velit quo. Officia iure
-		aliquid explicabo reprehenderit, alias consequuntur?
-	</p>
-</div>
-<div class="portholder">
-	<div class="portitem" data-aos="flip-left" data-aos-delay="000">
-		<img src="/images/portholder.jpg" alt="alttag" />
-		<h4>Project Title Here.</h4>
-		<p>Project Subtitle can go here.</p>
+<section>
+	<div class="content">
+		<h1 data-aos="fade-up" class="page-header">Projects</h1>
+		<p class="introlang">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia minima placeat
+			perspiciatis a illum labore laboriosam, possimus cupiditate, dignissimos provident, velit quo.
+			Officia iure aliquid explicabo reprehenderit, alias consequuntur?
+		</p>
 	</div>
-	<div class="portitem" data-aos="flip-left" data-aos-delay="100">
-		<img src="/images/portholder.jpg" alt="alttag" />
-		<h4>Project Title Here.</h4>
-		<p>Project Subtitle can go here.</p>
+	<div class="portholder">
+		<div class="portitem" data-aos="flip-left" data-aos-delay="000">
+			<img src="/images/portholder.jpg" alt="alttag" />
+			<h4>Project Title Here.</h4>
+			<p>Project Subtitle can go here.</p>
+		</div>
+		<div class="portitem" data-aos="flip-left" data-aos-delay="100">
+			<img src="/images/portholder.jpg" alt="alttag" />
+			<h4>Project Title Here.</h4>
+			<p>Project Subtitle can go here.</p>
+		</div>
+		<div class="portitem" data-aos="flip-left" data-aos-delay="200">
+			<img src="/images/portholder.jpg" alt="alttag" />
+			<h4>Project Title Here.</h4>
+			<p>Project Subtitle can go here.</p>
+		</div>
+		<div class="portitem" data-aos="flip-left" data-aos-delay="300">
+			<img src="/images/portholder.jpg" alt="alttag" />
+			<h4>Project Title Here.</h4>
+			<p>Project Subtitle can go here.</p>
+		</div>
+		<div class="portitem" data-aos="flip-left" data-aos-delay="000">
+			<img src="/images/portholder.jpg" alt="alttag" />
+			<h4>Project Title Here.</h4>
+			<p>Project Subtitle can go here.</p>
+		</div>
+		<div class="portitem" data-aos="flip-left" data-aos-delay="100">
+			<img src="/images/portholder.jpg" alt="alttag" />
+			<h4>Project Title Here.</h4>
+			<p>Project Subtitle can go here.</p>
+		</div>
+		<div class="portitem" data-aos="flip-left" data-aos-delay="200">
+			<img src="/images/portholder.jpg" alt="alttag" />
+			<h4>Project Title Here.</h4>
+			<p>Project Subtitle can go here.</p>
+		</div>
+		<div class="portitem" data-aos="flip-left" data-aos-delay="300">
+			<img src="/images/portholder.jpg" alt="alttag" />
+			<h4>Project Title Here.</h4>
+			<p>Project Subtitle can go here.</p>
+		</div>
+		<div class="portitem" data-aos="flip-left" data-aos-delay="000">
+			<img src="/images/portholder.jpg" alt="alttag" />
+			<h4>Project Title Here.</h4>
+			<p>Project Subtitle can go here.</p>
+		</div>
 	</div>
-	<div class="portitem" data-aos="flip-left" data-aos-delay="200">
-		<img src="/images/portholder.jpg" alt="alttag" />
-		<h4>Project Title Here.</h4>
-		<p>Project Subtitle can go here.</p>
-	</div>
-	<div class="portitem" data-aos="flip-left" data-aos-delay="300">
-		<img src="/images/portholder.jpg" alt="alttag" />
-		<h4>Project Title Here.</h4>
-		<p>Project Subtitle can go here.</p>
-	</div>
-	<div class="portitem" data-aos="flip-left" data-aos-delay="000">
-		<img src="/images/portholder.jpg" alt="alttag" />
-		<h4>Project Title Here.</h4>
-		<p>Project Subtitle can go here.</p>
-	</div>
-	<div class="portitem" data-aos="flip-left" data-aos-delay="100">
-		<img src="/images/portholder.jpg" alt="alttag" />
-		<h4>Project Title Here.</h4>
-		<p>Project Subtitle can go here.</p>
-	</div>
-	<div class="portitem" data-aos="flip-left" data-aos-delay="200">
-		<img src="/images/portholder.jpg" alt="alttag" />
-		<h4>Project Title Here.</h4>
-		<p>Project Subtitle can go here.</p>
-	</div>
-	<div class="portitem" data-aos="flip-left" data-aos-delay="300">
-		<img src="/images/portholder.jpg" alt="alttag" />
-		<h4>Project Title Here.</h4>
-		<p>Project Subtitle can go here.</p>
-	</div>
-	<div class="portitem" data-aos="flip-left" data-aos-delay="000">
-		<img src="/images/portholder.jpg" alt="alttag" />
-		<h4>Project Title Here.</h4>
-		<p>Project Subtitle can go here.</p>
-	</div>
-</div>
+</section>
 
 <style lang="scss">
 	@import '../mixins.scss';
 
 	.page-header {
 		@include section-header();
+		margin: 0;
+	}
+
+	section {
+		padding: 1rem 10rem;
 	}
 
 	.content {

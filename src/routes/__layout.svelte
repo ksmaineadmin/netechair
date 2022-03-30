@@ -34,6 +34,7 @@
 <style lang="scss">
 	main {
 		height: 100%;
+		margin-top: 120px;
 	}
 
 	footer {

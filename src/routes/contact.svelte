@@ -6,43 +6,50 @@
 	<title>Tech Air - Contact</title>
 </svelte:head>
 
-<div class="content">
-	<h1 data-aos="fade-up" class="page-header">Contact</h1>
+<section>
+	<div class="content">
+		<h1 data-aos="fade-up" class="page-header">Contact</h1>
 
-	<p class="introlang" data-aos="fade-up">
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ad quidem deleniti quaerat,
-		aliquam ullam laboriosam tempora beatae, accusamus autem laborum. Magnam neque pariatur illo
-		porro doloremque velit sequi illum.
-	</p>
-	<form name="contact" netlify>
-		<p data-aos="fade-up">
-			<label for="name">Name</label><input type="text" name="name" id="name" />
+		<p class="introlang" data-aos="fade-up">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ad quidem deleniti
+			quaerat, aliquam ullam laboriosam tempora beatae, accusamus autem laborum. Magnam neque
+			pariatur illo porro doloremque velit sequi illum.
 		</p>
-		<p data-aos="fade-up">
-			<label for="email">Email</label><input type="email" name="email" />
-		</p>
-		<p data-aos="fade-up">
-			<label for="subject">Subject</label><input type="text" name="subject" />
-		</p>
-		<p data-aos="fade-up">
-			<label for="details">Details</label><textarea name="details" rows="7" />
-		</p>
-		<p data-aos="fade-up">
-			<label for="file">Add File</label>
-			<input name="file" type="file" />
-		</p>
+		<form name="contact" netlify>
+			<p data-aos="fade-up">
+				<label for="name">Name</label><input type="text" name="name" id="name" />
+			</p>
+			<p data-aos="fade-up">
+				<label for="email">Email</label><input type="email" name="email" />
+			</p>
+			<p data-aos="fade-up">
+				<label for="subject">Subject</label><input type="text" name="subject" />
+			</p>
+			<p data-aos="fade-up">
+				<label for="details">Details</label><textarea name="details" rows="7" />
+			</p>
+			<p data-aos="fade-up">
+				<label for="file">Add File</label>
+				<input name="file" type="file" />
+			</p>
 
-		<p data-aos="fade-up">
-			<button class="submit" type="submit">Submit</button>
-		</p>
-	</form>
-</div>
+			<p data-aos="fade-up">
+				<button class="submit" type="submit">Submit</button>
+			</p>
+		</form>
+	</div>
+</section>
 
 <style lang="scss">
 	@import '../mixins.scss';
 
+	section {
+		padding: 1rem 10rem;
+	}
+
 	.page-header {
 		@include section-header();
+		margin: 0;
 	}
 	.content {
 		max-width: 900px;
