@@ -1,28 +1,28 @@
 <section>
-	<h2 class="span-full" data-aos="fade-up">Affiliations</h2>
-	<div class="affiliations__container" data-aos="fade-up">
+	<h2 class="span-full align-self-end" data-aos="fade-up">Affiliations</h2>
+	<div class="affiliations__container align-self-start" data-aos="fade-up">
 		<div data-aos="fade-up" data-aos-delay="0" class="affiliations__box">
 			<img
 				src="images/abc_thumb.png"
 				alt="ABC Industries Logo"
 				data-aos="fade-up"
-				width="150"
-				height="109"
+				width="100"
+				height="77"
 			/>
 		</div>
 		<div data-aos="fade-up" data-aos-delay="100" class="affiliations__box">
 			<img
 				src="images/ashrae_thumb.png"
 				alt="ASHRAE Professional association logo"
-				width="150"
-				height="109"
+				width="100"
+				height="77"
 			/>
 		</div>
 		<div data-aos="fade-up" data-aos-delay="200" class="affiliations__box">
-			<img src="images/osha_thumb.png" alt="OSHA logo" width="150" height="109" />
+			<img src="images/osha_thumb.png" alt="OSHA logo" width="100" height="77" />
 		</div>
 		<div data-aos="fade-up" data-aos-delay="300" class="affiliations__box">
-			<img src="images/smacna_thumb.png" alt="SMACNA Logo" width="150" height="109" />
+			<img src="images/smacna_thumb.png" alt="SMACNA Logo" width="100" height="77" />
 		</div>
 	</div>
 </section>
@@ -34,7 +34,6 @@
 	section {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: auto 1fr;
 		gap: 1rem;
 		align-items: center;
 		padding: 1rem 10rem;
@@ -50,6 +49,14 @@
 		@include section-header;
 	}
 
+	.align-self-end {
+		align-self: end;
+	}
+
+	.align-self-start {
+		align-self: start;
+	}
+
 	@media screen and (max-width: $device-medium) {
 		section {
 			padding: 1rem 1rem;
@@ -59,11 +66,10 @@
 
 	.affiliations {
 		&__container {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-			justify-content: center;
-			justify-items: center;
+			display: flex;
+			justify-content: space-evenly;
 			gap: 3rem;
+			margin: 0 auto;
 
 			@media screen and (max-width: $device-xlarge) {
 				grid-template-columns: 1fr 1fr;
@@ -81,8 +87,9 @@
 			transform: translateY(0);
 			transition: transform ease-in-out 50ms;
 
-			&:hover {
-				transform: translateY(-10px);
+			img {
+				width: 100px;
+				height: 100%;
 			}
 		}
 	}
