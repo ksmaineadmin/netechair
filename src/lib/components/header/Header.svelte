@@ -34,13 +34,11 @@
 				nav.setAttribute('data-visible', 'true');
 				navToggle.setAttribute('aria-expanded', 'true');
 				header.classList.add('sticky');
-				document.body.style.overflow = 'hidden';
 			} else {
 				navToggle.classList.remove('active');
 				nav.setAttribute('data-visible', 'false');
 				navToggle.setAttribute('aria-expanded', 'false');
 				header.classList.remove('sticky');
-				document.body.style.overflow = 'initial';
 			}
 		};
 

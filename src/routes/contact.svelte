@@ -45,6 +45,7 @@
 	@import '../variables.scss';
 
 	section {
+		margin: 120px auto;
 		padding: 1rem 10rem;
 
 		@media (max-width: $device-medium) {
@@ -54,13 +55,12 @@
 
 	.page-header {
 		@include section-header();
-		margin: 0;
+		margin: 2rem 0 3rem 0;
 	}
 	.content {
 		max-width: 900px;
 		width: 100%;
-		padding: 0 15px;
-		margin: 0 auto 50px;
+		margin: 0 auto;
 		.introlang {
 			color: var(--secondary-font-color);
 			margin-bottom: 60px;

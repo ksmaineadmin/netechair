@@ -84,10 +84,10 @@
 
 	.page-header {
 		@include section-header();
-		margin-top: 0;
+		margin: 2rem 0 3rem 0;
 	}
 	section {
-		margin: 0 auto;
+		margin: 120px auto;
 		width: 100%;
 		padding: 1rem 10rem;
 		background-color: #1c1c1c;

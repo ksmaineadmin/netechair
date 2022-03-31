@@ -70,10 +70,11 @@
 
 	.page-header {
 		@include section-header();
-		margin: 0;
+		margin: 2rem 0 3rem 0;
 	}
 
 	section {
+		margin: 120px auto;
 		padding: 1rem 10rem;
 
 		@media (max-width: $device-medium) {
