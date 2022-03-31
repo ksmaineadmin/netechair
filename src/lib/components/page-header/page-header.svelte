@@ -7,7 +7,7 @@
 	class="hero__container"
 	style="background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(9, 9, 9, 0.7)), url({backgroundImageUrl})"
 >
-	<h1 class="hero__title">{title}</h1>
+	<h1 class="hero__title" data-aos="fade-up">{title}</h1>
 </div>
 
 <style lang="scss">
