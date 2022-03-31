@@ -80,8 +80,5 @@
 			color: var(--accent-color);
 			text-align: center;
 		}
-
-		&__description {
-		}
 	}
 </style>

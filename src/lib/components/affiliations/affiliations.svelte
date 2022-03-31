@@ -67,6 +67,7 @@
 	.affiliations {
 		&__container {
 			display: flex;
+			flex-wrap: wrap;
 			justify-content: space-evenly;
 			gap: 3rem;
 			margin: 0 auto;
