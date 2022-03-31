@@ -2,7 +2,7 @@
 	import PageHeader from '../lib/components/page-header/page-header.svelte';
 </script>
 
-<PageHeader title="Project Title" />
+<PageHeader title="Project Title" backgroundImageUrl="images/sparks.jpg" />
 
 <section>
 	<div class="portfolio__container">
