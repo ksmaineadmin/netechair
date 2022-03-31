@@ -1,15 +1,16 @@
 <script context="module">
 	export const prerender = true;
+	import PageHeader from '../lib/components/page-header/page-header.svelte';
 </script>
 
 <svelte:head>
 	<title>Tech Air - Contact</title>
 </svelte:head>
 
+<PageHeader title="Contact" />
+
 <section>
 	<div class="content">
-		<h1 data-aos="fade-up" class="page-header">Contact</h1>
-
 		<p class="introlang" data-aos="fade-up">
 			Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ad quidem deleniti
 			quaerat, aliquam ullam laboriosam tempora beatae, accusamus autem laborum. Magnam neque
@@ -45,7 +46,7 @@
 	@import '../variables.scss';
 
 	section {
-		margin: 120px auto;
+		margin: 0 auto;
 		padding: 1rem 10rem;
 
 		@media (max-width: $device-medium) {
