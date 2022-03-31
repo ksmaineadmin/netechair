@@ -10,7 +10,7 @@
 	<title>Tech Air - Our Team</title>
 </svelte:head>
 
-<PageHeader title="Our Team" />
+<PageHeader title="Our Team" backgroundImageUrl="images/team-header.jpg" />
 
 <section>
 	<div class="container">

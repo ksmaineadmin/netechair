@@ -7,7 +7,7 @@
 	<title>Tech Air - Contact</title>
 </svelte:head>
 
-<PageHeader title="Contact" />
+<PageHeader title="Contact" backgroundImageUrl="images/contact-header.jpg" />
 
 <section>
 	<div class="content">

@@ -7,7 +7,7 @@
 	<title>Tech Air - Projects</title>
 </svelte:head>
 
-<PageHeader title="Projects" />
+<PageHeader title="Projects" backgroundImageUrl="images/sparks.jpg" />
 
 <section>
 	<div class="content">

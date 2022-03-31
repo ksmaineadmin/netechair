@@ -1,8 +1,12 @@
 <script lang="js">
 	export let title = '';
+	export let backgroundImageUrl = '';
 </script>
 
-<div class="hero__container">
+<div
+	class="hero__container"
+	style="background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(9, 9, 9, 0.7)), url({backgroundImageUrl})"
+>
 	<h1 class="hero__title">{title}</h1>
 </div>
 
@@ -13,6 +17,7 @@
 	.hero {
 		&__container {
 			margin-top: 120px;
+			min-height: 400px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -20,12 +25,6 @@
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
-			min-height: 300px;
-			background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(9, 9, 9, 0.4)),
-				url('images/sparks.jpg');
-			background-position: 50%;
-			background-size: cover;
-			background-attachment: fixed;
 		}
 
 		&__title {
