@@ -243,8 +243,12 @@
 				fill: transparent;
 			}
 
-			@media (max-width: $device-xsmall) {
-				width: 220px;
+			@media (max-width: $device-medium) {
+				width: 200px;
+			}
+
+			@media (max-width: $device-small) {
+				width: 150px;
 			}
 		}
 	}
