@@ -1,8 +1,23 @@
-<script lang="js">
-	import PageHeader from '../lib/components/page-header/page-header.svelte';
+<script context="module" lang="js">
+	export async function load({ fetch, params }) {
+		let projectName = params.projectName;
+		const res = await fetch(`https://jsonplaceholder.typicode.com/users/${projectName}`);
+		const data = await res.json();
+		if (res.ok) {
+			return {
+				props: { project: data }
+			};
+		}
+	}
 </script>
 
-<PageHeader title="Project Title" backgroundImageUrl="images/sparks.jpg" />
+<script lang="js">
+	export const prerender = true;
+	export let project;
+	import PageHeader from '../../lib/components/page-header/page-header.svelte';
+</script>
+
+<PageHeader title="Project Title" backgroundImageUrl="../images/sparks.jpg" />
 
 <section>
 	<div class="portfolio__container">
@@ -43,8 +58,8 @@
 </section>
 
 <style lang="scss">
-	@import '../mixins.scss';
-	@import '../variables.scss';
+	@import '../../mixins.scss';
+	@import '../../variables.scss';
 
 	.portfolio {
 		&__container {

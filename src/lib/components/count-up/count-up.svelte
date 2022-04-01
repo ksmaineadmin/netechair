@@ -76,7 +76,6 @@
 		&__number {
 			min-width: 140px;
 			border-radius: 8px;
-			font-size: 3rem;
 			color: var(--accent-color);
 			text-align: center;
 		}

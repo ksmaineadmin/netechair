@@ -1,6 +1,19 @@
+<script context="module" lang="js">
+	export async function load({ fetch }) {
+		const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+		const data = await res.json();
+		console.log(data);
+		if (res.ok) {
+			return {
+				props: { projects: data }
+			};
+		}
+	}
+</script>
+
 <script>
-	export const prerender = true;
-	import PageHeader from '../lib/components/page-header/page-header.svelte';
+	export let projects;
+	import PageHeader from '../../lib/components/page-header/page-header.svelte';
 </script>
 
 <svelte:head>
@@ -18,57 +31,20 @@
 		</p>
 	</div>
 	<div class="portholder">
-		<div class="portitem" data-aos="flip-left" data-aos-delay="000">
-			<img src="/images/portholder.jpg" alt="alttag" />
-			<h4>Project Title Here.</h4>
-			<p>Project Subtitle can go here.</p>
-		</div>
-		<div class="portitem" data-aos="flip-left" data-aos-delay="100">
-			<img src="/images/portholder.jpg" alt="alttag" />
-			<h4>Project Title Here.</h4>
-			<p>Project Subtitle can go here.</p>
-		</div>
-		<div class="portitem" data-aos="flip-left" data-aos-delay="200">
-			<img src="/images/portholder.jpg" alt="alttag" />
-			<h4>Project Title Here.</h4>
-			<p>Project Subtitle can go here.</p>
-		</div>
-		<div class="portitem" data-aos="flip-left" data-aos-delay="300">
-			<img src="/images/portholder.jpg" alt="alttag" />
-			<h4>Project Title Here.</h4>
-			<p>Project Subtitle can go here.</p>
-		</div>
-		<div class="portitem" data-aos="flip-left" data-aos-delay="000">
-			<img src="/images/portholder.jpg" alt="alttag" />
-			<h4>Project Title Here.</h4>
-			<p>Project Subtitle can go here.</p>
-		</div>
-		<div class="portitem" data-aos="flip-left" data-aos-delay="100">
-			<img src="/images/portholder.jpg" alt="alttag" />
-			<h4>Project Title Here.</h4>
-			<p>Project Subtitle can go here.</p>
-		</div>
-		<div class="portitem" data-aos="flip-left" data-aos-delay="200">
-			<img src="/images/portholder.jpg" alt="alttag" />
-			<h4>Project Title Here.</h4>
-			<p>Project Subtitle can go here.</p>
-		</div>
-		<div class="portitem" data-aos="flip-left" data-aos-delay="300">
-			<img src="/images/portholder.jpg" alt="alttag" />
-			<h4>Project Title Here.</h4>
-			<p>Project Subtitle can go here.</p>
-		</div>
-		<div class="portitem" data-aos="flip-left" data-aos-delay="000">
-			<img src="/images/portholder.jpg" alt="alttag" />
-			<h4>Project Title Here.</h4>
-			<p>Project Subtitle can go here.</p>
-		</div>
+		{#each projects as project}
+			<a href={`/projects/${project.id}`}>
+				<div class="portitem" data-aos="flip-left" data-aos-delay="000">
+					<img src="/images/portholder.jpg" alt={project.title + ' thumbnail image'} />
+					<h4>{project.title}</h4>
+				</div>
+			</a>
+		{/each}
 	</div>
 </section>
 
 <style lang="scss">
-	@import '../mixins.scss';
-	@import '../variables.scss';
+	@import '../../mixins.scss';
+	@import '../../variables.scss';
 
 	.page-header {
 		@include section-header();

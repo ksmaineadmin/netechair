@@ -282,8 +282,8 @@
 		.mobile-nav-toggle {
 			position: absolute;
 			display: block;
-			top: 2.2rem;
-			right: 2.2rem;
+			top: 1rem;
+			right: 1rem;
 			z-index: 9999;
 			cursor: pointer;
 		}

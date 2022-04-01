@@ -94,13 +94,6 @@
 		background-attachment: fixed;
 		background-size: cover;
 
-		h2 {
-			font-size: 3rem;
-			text-align: center;
-			color: var(--secondary-font-color);
-			margin: 0;
-		}
-
 		@media (max-width: $device-medium) {
 			padding: 1rem;
 		}
