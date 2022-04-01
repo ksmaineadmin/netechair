@@ -84,9 +84,8 @@
 	section {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: auto 1fr;
 		justify-content: space-around;
-		align-items: start;
+		align-items: center;
 		gap: 1rem;
 		padding: 1rem 10rem 4rem 10rem;
 		min-height: 70vh;

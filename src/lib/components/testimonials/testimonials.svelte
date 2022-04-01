@@ -141,7 +141,7 @@
 	section {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: auto 1fr;
+		align-items: center;
 		min-height: 60vh;
 		background-color: #000000;
 		background-image: linear-gradient(147deg, #000000 0%, #131313 74%);

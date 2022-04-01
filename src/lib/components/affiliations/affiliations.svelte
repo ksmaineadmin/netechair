@@ -1,6 +1,6 @@
 <section>
 	<!-- <h2 class="span-full align-self-end" data-aos="fade-up">Affiliations</h2> -->
-	<div class="affiliations__container align-self-start" data-aos="fade-up">
+	<div class="affiliations__container" data-aos="fade-up">
 		<div data-aos="fade-up" data-aos-delay="0" class="affiliations__box">
 			<img
 				src="images/abc_thumb.png"
@@ -47,14 +47,6 @@
 
 	h2 {
 		@include section-header;
-	}
-
-	.align-self-end {
-		align-self: end;
-	}
-
-	.align-self-start {
-		align-self: start;
 	}
 
 	@media screen and (max-width: $device-medium) {
