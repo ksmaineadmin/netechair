@@ -3,7 +3,7 @@
 </script>
 
 <section data-aos="fade">
-	<h2 class="span-full" data-aos="fade-up">Welcome to Tech Air</h2>
+	<!-- <h2 class="span-full" data-aos="fade-up">Welcome to Tech Air</h2> -->
 	<article>
 		<div data-aos="fade-up" data-aos-delay="100" class="article__inner">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"

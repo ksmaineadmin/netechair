@@ -109,7 +109,7 @@
 </script>
 
 <section id="testim" class="testim" data-aos="fade-up">
-	<h2 class="span-full" data-aos="fade-up">Testimonials</h2>
+	<!-- <h2 class="span-full" data-aos="fade-up">Testimonials</h2> -->
 	<div class="wrap">
 		<span id="right-arrow" class="arrow right fa fa-chevron-right" />
 		<span id="left-arrow" class="arrow left fa fa-chevron-left " />

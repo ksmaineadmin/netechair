@@ -1,5 +1,5 @@
 <section>
-	<h2 class="span-full align-self-end" data-aos="fade-up">Affiliations</h2>
+	<!-- <h2 class="span-full align-self-end" data-aos="fade-up">Affiliations</h2> -->
 	<div class="affiliations__container align-self-start" data-aos="fade-up">
 		<div data-aos="fade-up" data-aos-delay="0" class="affiliations__box">
 			<img
