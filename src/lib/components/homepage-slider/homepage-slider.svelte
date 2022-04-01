@@ -88,7 +88,7 @@
 		<source src="homepage-videos/oil-pipes.mp4" type="video/mp4" />
 	</video>
 	<div class="overlay">
-		<!-- <h1>In Business for Over Thirty Five Years</h1> -->
+		<h1>In Business for Over Thirty Five Years</h1>
 		<SlickButton buttonName={'Contact Us'} buttonLink="/contact" />
 	</div>
 </div>
