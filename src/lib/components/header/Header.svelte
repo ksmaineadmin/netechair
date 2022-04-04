@@ -177,11 +177,15 @@
 					<a class:active={$page.url.pathname === '/'} sveltekit:prefetch href="/">Home</a>
 				</li>
 				<li>
-					<a class:active={$page.url.pathname === '/team'} sveltekit:prefetch href="/team">Team</a>
+					<a class:active={$page.url.pathname.includes('/team')} sveltekit:prefetch href="/team"
+						>Team</a
+					>
 				</li>
 				<li>
-					<a class:active={$page.url.pathname === '/projects'} sveltekit:prefetch href="/projects"
-						>Projects</a
+					<a
+						class:active={$page.url.pathname.includes('/projects')}
+						sveltekit:prefetch
+						href="/projects">Projects</a
 					>
 				</li>
 				<li>
