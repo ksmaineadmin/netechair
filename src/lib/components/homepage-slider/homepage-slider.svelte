@@ -88,7 +88,7 @@
 		<source src="homepage-videos/oil-pipes.mp4" type="video/mp4" />
 	</video>
 	<div class="overlay">
-		<h1>In Business for Over Thirty Five Years</h1>
+		<h1>Tech Air has built a strong design, build and construction team over the last 35 years</h1>
 		<SlickButton buttonName={'Contact Us'} buttonLink="/contact" />
 	</div>
 </div>

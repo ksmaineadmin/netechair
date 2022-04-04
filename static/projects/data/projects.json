@@ -1,0 +1,8 @@
+[
+	{
+		"id": 1,
+		"name": "MIT Lincoln Labs",
+		"location": "Hanscom Air Force Base, MA",
+		"images": ["./projects/images/mitlincolnlabs.jpg", "./projects/images/mitlincolnlabs2.jpg"]
+	}
+]

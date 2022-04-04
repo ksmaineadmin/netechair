@@ -1,6 +1,6 @@
 <script context="module" lang="js">
 	export async function load({ fetch }) {
-		const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+		const res = await fetch('projects/data/projects.json');
 		const data = await res.json();
 		console.log(data);
 		if (res.ok) {
@@ -32,12 +32,17 @@
 	</div>
 	<div class="portholder">
 		{#each projects as project}
-			<a href={`/projects/${project.id}`}>
-				<div class="portitem" data-aos="flip-left" data-aos-delay="000">
+			<!-- <div class="portitem" data-aos="flip-left" data-aos-delay="000">
+				<a href={`/projects/${project.id}`}>
 					<img src="/images/portholder.jpg" alt={project.title + ' thumbnail image'} />
-					<h4>{project.title}</h4>
-				</div>
-			</a>
+				</a>
+				<h4>{project.title}</h4>
+			</div> -->
+
+			{project.id}
+			{project.name}
+			{project.location}
+			<img src={project.images[0]} alt="" />
 		{/each}
 	</div>
 </section>
