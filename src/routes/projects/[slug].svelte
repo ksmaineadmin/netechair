@@ -16,7 +16,6 @@
 	export const prerender = true;
 	import PageHeader from '../../lib/components/page-header/page-header.svelte';
 	export let project;
-	console.log(project);
 </script>
 
 <PageHeader title={project.name} backgroundImageUrl="../images/sparks.jpg" />
