@@ -2,7 +2,6 @@
 	export async function load({ fetch }) {
 		const res = await fetch('projects/data/projects.json');
 		const data = await res.json();
-		console.log(data);
 		if (res.ok) {
 			return {
 				props: { projects: data }

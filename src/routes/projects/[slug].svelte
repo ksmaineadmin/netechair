@@ -3,7 +3,6 @@
 		const res = await fetch('data/projects.json');
 		const data = await res.json();
 		const currentlySelectedProject = data.find((p) => p.slug === params.slug);
-		console.log(currentlySelectedProject);
 		if (res.ok) {
 			return {
 				props: { project: currentlySelectedProject }
