@@ -32,17 +32,15 @@
 	</div>
 	<div class="portholder">
 		{#each projects as project}
-			<!-- <div class="portitem" data-aos="flip-left" data-aos-delay="000">
-				<a href={`/projects/${project.id}`}>
-					<img src="/images/portholder.jpg" alt={project.title + ' thumbnail image'} />
+			<div class="portitem" data-aos="flip-left" data-aos-delay="000">
+				<a href={`/projects/${project.slug}`}>
+					<img
+						src={`projects/images/${project.images[0]}`}
+						alt={project.name + ' thumbnail image'}
+					/>
 				</a>
-				<h4>{project.title}</h4>
-			</div> -->
-
-			{project.id}
-			{project.name}
-			{project.location}
-			<img src={project.images[0]} alt="" />
+				<h4>{project.name}</h4>
+			</div>
 		{/each}
 	</div>
 </section>

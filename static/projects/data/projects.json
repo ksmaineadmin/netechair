@@ -3,6 +3,14 @@
 		"id": 1,
 		"name": "MIT Lincoln Labs",
 		"location": "Hanscom Air Force Base, MA",
-		"images": ["./projects/images/mitlincolnlabs.jpg", "./projects/images/mitlincolnlabs2.jpg"]
+		"slug": "mit-lincoln-labs",
+		"images": ["mitlincolnlabs1.jpg", "mitlincolnlabs2.jpg"]
+	},
+	{
+		"id": 2,
+		"name": "MIT Research Labs",
+		"location": "Cambridge, MA",
+		"slug": "mit-research-labs",
+		"images": ["mitresearchlabs1.jpg", "mitresearchlabs2.jpg", "mitresearchlabs3.jpg"]
 	}
 ]
