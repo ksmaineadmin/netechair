@@ -35,11 +35,7 @@
 		</div>
 		<div class="portfolio__gallery">
 			{#each project.images as image, index}
-				<div
-					class="portitem {index === 0 ? 'span-full' : ''}"
-					data-aos="flip-left"
-					data-aos-delay="000"
-				>
+				<div class="portitem {index === 0 ? 'span-full' : ''}">
 					<img src={`../projects/images/${image}`} alt={project.name + ' thumbnail image'} />
 				</div>
 			{/each}
