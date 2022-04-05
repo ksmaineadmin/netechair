@@ -3,7 +3,7 @@
 	import PageHeader from '../../lib/components/page-header/page-header.svelte';
 
 	export async function load({ fetch }) {
-		const res = await fetch('team/data/team.json');
+		const res = await fetch('/team/data/team.json');
 		const data = await res.json();
 		if (res.ok) {
 			return {
