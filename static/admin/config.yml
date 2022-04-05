@@ -4,6 +4,7 @@ backend:
 collections:
   - label: Team
     name: team
+    folder: src/routes/team/data
     widget: list
     fields:
       - { label: Name, name: name, widget: string }
