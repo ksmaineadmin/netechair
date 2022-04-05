@@ -14,9 +14,10 @@ collections:
 
   - label: 'Team Members'
     name: 'team-members'
+    format: json
     files:
       - label: 'Team Members Page'
-        name: 'about'
+        name: 'team'
         file: 'site/content/about.yml'
         fields:
           - { label: Title, name: title, widget: string }
