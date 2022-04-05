@@ -2,11 +2,12 @@ backend:
   name: git-gateway
   branch: main
 collections:
-  - label: Team
-    name: team
+  - label: Team Member
+    name: team-member
     folder: src/routes/team/data
     create: true
     widget: list
+    format: json
     fields:
       - { label: Name, name: name, widget: string }
       - { label: Position, name: position, widget: string }
