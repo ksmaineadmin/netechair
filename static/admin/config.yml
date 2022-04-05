@@ -2,17 +2,16 @@ backend:
   name: git-gateway
   branch: main
 collections:
-  - label: 'Blog'
-    name: 'blog'
+  - label: 'Testimonials'
+    name: 'testimonials'
+    collapsed: false
+    widget: 'list'
+    format: 'json'
     file: 'src/routes/team/data/team.json'
-    folder: src/routes/team/data
-    format: json
-    create: true
+    folder: 'src/routes/projects/data'
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: Quote, name: quote, widget: string, default: 'Everything is awesome!' }
+      - { label: Author, name: author, widget: string }
 media_folder: 'static/uploads'
 public_folder: '/uploads'
 # site_url: https://your-site.com
