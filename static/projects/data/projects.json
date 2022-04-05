@@ -12,5 +12,18 @@
 		"location": "Cambridge, MA",
 		"slug": "mit-research-labs",
 		"images": ["mitresearchlabs1.jpg", "mitresearchlabs2.jpg", "mitresearchlabs3.jpg"]
+	},
+	{
+		"id": 3,
+		"name": "Carillion Hospital",
+		"location": "Richmond, VA",
+		"slug": "carillion-hospital",
+		"images": [
+			"carillion1.jpg",
+			"carillion2.jpg",
+			"carillion3.jpg",
+			"carillion4.jpg",
+			"carillion5.jpg"
+		]
 	}
 ]
