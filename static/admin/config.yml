@@ -4,7 +4,7 @@ backend:
 collections:
   - label: 'Blog'
     name: 'blog'
-    folder: '_posts/blog'
+    file: 'src/routes/team/data/team.json'
     format: json
     create: true
     fields:
