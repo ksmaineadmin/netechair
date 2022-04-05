@@ -1,9 +1,20 @@
-<script context="module" lang="ts">
-	import TeamCard from '../lib/components/team-card/team-card.svelte';
-	import PageHeader from '../lib/components/page-header/page-header.svelte';
-	// since there's no dynamic data here, we can prerender
-	// it so that it gets served as a static asset in prod
-	export const prerender = true;
+<script context="module" lang="js">
+	import TeamCard from '../../lib/components/team-card/team-card.svelte';
+	import PageHeader from '../../lib/components/page-header/page-header.svelte';
+
+	export async function load({ fetch }) {
+		const res = await fetch('team/data/team.json');
+		const data = await res.json();
+		if (res.ok) {
+			return {
+				props: { teamMembers: data }
+			};
+		}
+	}
+</script>
+
+<script>
+	export let teamMembers;
 </script>
 
 <svelte:head>
@@ -13,78 +24,28 @@
 <PageHeader title="Our Team" backgroundImageUrl="images/team-header.jpg" />
 
 <section>
-	<div class="container">
-		<div data-aos="fade-in" style="width: 100%;">
-			<TeamCard employeeName={'Bob Lily'} title="CEO" />
-		</div>
-		<div data-aos="fade-in" style="width: 100%;">
-			<TeamCard employeeName={'Norman Locke'} title="Vice President" />
-		</div>
-		<div class="span-full" data-aos="fade-in" data-aos-delay="150">
-			<TeamCard employeeName={'Kevin Robinson'} title="GM" />
-		</div>
-		<div class="span-full" data-aos="fade-in" data-aos-delay="150">
-			<TeamCard employeeName={'Randy Robinson'} title="Executive PM" />
-		</div>
-		<div class="span-full" data-aos="fade-in" data-aos-delay="150">
-			<TeamCard employeeName={'Michelle Curtis'} title="Executive PM" />
-		</div>
-		<div class="span-full" data-aos="fade-in" data-aos-delay="150">
-			<TeamCard employeeName={'Garrett Duffy'} title="Supervisor" />
-		</div>
-		<div class="span-full" data-aos="fade-in" data-aos-delay="150">
-			<TeamCard employeeName={'Matt Duffy'} title="Executive Manager" />
-		</div>
-		<div class="span-full" data-aos="fade-in" data-aos-delay="150">
-			<TeamCard employeeName={'Olivia Locke'} title="CFO" />
-		</div>
-		<div class="span-full" data-aos="fade-in" data-aos-delay="150">
-			<TeamCard employeeName={'Jarrod Lilly'} title="Manager" />
-		</div>
-		<div class="span-full" data-aos="fade-in" data-aos-delay="150">
-			<TeamCard employeeName={'Ken Austin'} title="Manager" />
-		</div>
-		<div class="span-full" data-aos="fade-in" data-aos-delay="150">
-			<TeamCard employeeName={'Taylor Locke'} title="Manager" />
-		</div>
-		<div class="span-full" data-aos="fade-in" data-aos-delay="150">
-			<TeamCard employeeName={'John Frankl'} title="Project Manager" />
-		</div>
-		<div class="span-full" data-aos="fade-in" data-aos-delay="150">
-			<TeamCard employeeName={'Earl "Whit" Jackson'} title="Project Manager" />
-		</div>
-		<div class="span-full" data-aos="fade-in" data-aos-delay="150">
-			<TeamCard employeeName={'Steve Kearney'} title="Project Manager" />
-		</div>
-		<div class="span-full" data-aos="fade-in" data-aos-delay="150">
-			<TeamCard employeeName={'Angela Hussey'} title="Manager" />
-		</div>
-		<div class="span-full" data-aos="fade-in" data-aos-delay="150">
-			<TeamCard employeeName={'Dana Melanson'} title="Manager" />
-		</div>
-		<div class="span-full" data-aos="fade-in" data-aos-delay="150">
-			<TeamCard employeeName={'Tom Flynn'} title="Project Manager" />
-		</div>
-		<div class="span-full" data-aos="fade-in" data-aos-delay="150">
-			<TeamCard employeeName={'Craig Flynn'} title="Manager" />
-		</div>
-		<div class="span-full" data-aos="fade-in" data-aos-delay="150">
-			<TeamCard employeeName={'Rick Enwright'} title="Supervisor" />
-		</div>
-		<div class="span-full" data-aos="fade-in" data-aos-delay="150">
-			<TeamCard employeeName={'Brian Lorom'} title="Supervisor" />
-		</div>
+	<div class="container" data-aos="fade-in">
+		{#each teamMembers as teamMember, index}
+			<div class={index === 0 || index === 1 ? 'span-full' : 'full-width'}>
+				<TeamCard employeeName={teamMember.name} title={teamMember.title} />
+			</div>
+		{/each}
 	</div>
 </section>
 
 <style lang="scss">
-	@import '../mixins.scss';
-	@import '../variables.scss';
+	@import '../../mixins.scss';
+	@import '../../variables.scss';
 
 	.page-header {
 		@include section-header();
 		margin: 2rem 0 3rem 0;
 	}
+
+	.full-width {
+		width: 100%;
+	}
+
 	section {
 		margin: 0 auto;
 		width: 100%;
