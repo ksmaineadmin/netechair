@@ -17,7 +17,7 @@ collections:
             fields:
               - { label: Name, name: name, widget: string }
               - { label: Position, name: position, widget: string }
-              - { label: Photo, name: photo, widget: image }
+              - { label: Photo, name: photo, widget: image, optional: true }
 media_folder: 'static/uploads'
 public_folder: '/uploads'
 # site_url: https://your-site.com
