@@ -1,5 +1,0 @@
----
-name: Jarrod Lilly
-position: Business Development
-photo: https://www.hollywoodreporter.com/wp-content/uploads/2022/03/GettyImages-1229893337.jpg?w=681&h=383&crop=1
----
