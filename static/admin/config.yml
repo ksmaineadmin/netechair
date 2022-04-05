@@ -30,6 +30,8 @@ collections:
             fields:
               - { label: Name, name: name, widget: string }
               - { label: Address, name: address, widget: string }
+media_folder: 'static/uploads'
+public_folder: '/uploads'
 # site_url: https://your-site.com
 # display_url: https://your-site.com
 # logo_url: https://your-site.com/images/logo.svg
