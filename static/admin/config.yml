@@ -2,29 +2,16 @@ backend:
   name: git-gateway
   branch: main
 collections:
-  - name: projects
-    label: projects
-    folder: src/routes/projects/data
+  - label: 'Blog'
+    name: 'blog'
+    folder: '_posts/blog'
+    format: json
     create: true
     fields:
-      - name: name
-      - name: location
-      - name: slug
-        widget: markdown
-
-  - name: 'team-members'
-    label: 'Team Members'
-    file: 'src/routes/team/data/team.json'
-    format: json
-    fields:
-      - { label: Title, name: title, widget: string }
-      - { label: Intro, name: intro, widget: markdown }
-      - label: Locations
-        name: locations
-        widget: list
-        fields:
-          - { label: Name, name: name, widget: string }
-          - { label: Address, name: address, widget: string }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
 media_folder: 'static/uploads'
 public_folder: '/uploads'
 # site_url: https://your-site.com
