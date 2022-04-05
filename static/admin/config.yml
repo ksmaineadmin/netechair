@@ -18,7 +18,7 @@ collections:
     files:
       - label: 'Team Members Page'
         name: 'team'
-        file: 'site/content/about.yml'
+        file: 'src/routes/team/data/team.json'
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Intro, name: intro, widget: markdown }
