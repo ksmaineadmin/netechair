@@ -12,16 +12,19 @@ collections:
       - name: slug
         widget: markdown
 
-  - label: 'Team Members'
-    name: 'team-members'
+  - name: 'team-members'
+    label: 'Team Members'
+    file: 'src/routes/team/data/team.json'
     format: json
-    files:
-      - label: 'Team Members Page'
-        name: 'team'
-        file: 'src/routes/team/data/team.json'
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Intro, name: intro, widget: markdown }
+      - label: Locations
+        name: locations
+        widget: list
         fields:
-          - { label: Title, name: title, widget: string }
-          - { label: Intro, name: intro, widget: markdown }
+          - { label: Name, name: name, widget: string }
+          - { label: Address, name: address, widget: string }
 media_folder: 'static/uploads'
 public_folder: '/uploads'
 # site_url: https://your-site.com
