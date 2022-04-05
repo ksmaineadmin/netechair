@@ -11,8 +11,8 @@ collections:
         file: 'src/routes/team/data/team.json'
         fields:
           - { label: Title, name: title, widget: string }
-          - label: Team
-            name: team
+          - label: 'Team Member'
+            name: team-member
             widget: list
             fields:
               - { label: Name, name: name, widget: string }
