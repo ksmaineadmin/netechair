@@ -8,7 +8,7 @@ collections:
       - label: 'Team Page'
         name: 'team'
         format: 'json'
-        file: 'data/team.json'
+        file: 'static/data/team.json'
         fields:
           - { label: Title, name: title, widget: string }
           - label: 'Team Member'
