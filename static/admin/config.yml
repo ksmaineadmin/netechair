@@ -22,8 +22,6 @@ collections:
   - name: 'projects' # Used in routes, ie.: /admin/collections/:slug/edit
     label: 'Projects' # Used in the UI
     label_singular: 'Project' # Used in the UI, ie: "New Post"
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    summary: '{{title}} -- {{year}}/{{month}}/{{day}}'
     create: true # Allow users to create new documents in this collection
     format: 'json'
     file: 'static/data/projects.json'
