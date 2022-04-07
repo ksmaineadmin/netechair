@@ -26,8 +26,8 @@ collections:
         name: 'projects'
         file: 'static/data/projects.json'
         fields:
-        - { label: Project Description, name: description, widget: string }
-        - { label: Client, name: client, widget: string }
+          - { label: Project Description, name: description, widget: string }
+          - { label: Client, name: client, widget: string }
           - label: 'Images'
             label_singular: 'image'
             name: 'images'
