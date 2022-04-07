@@ -19,13 +19,15 @@ collections:
               - { label: Name, name: name, widget: string }
               - { label: Position, name: position, widget: string }
               - { label: Photo, name: photo, widget: image, required: false }
-      - name: 'galleria'
-        label: 'Gallery'
+      - name: 'projects'
+        label: 'Projects'
+        format: 'json'
+        file: 'static/data/projects.json'
         widget: 'list'
         optional: true
         fields:
           - { label: 'Title', name: 'imgTitle', widget: 'string' }
-          - { label: 'Gallery Image', name: 'imgSrc', widget: 'image' }
+          - { label: 'Project Image', name: 'imgSrc', widget: 'image' }
           - { label: 'Description', name: 'imgDesc', widget: 'string' }
 media_folder: 'static/uploads'
 public_folder: '/uploads'
