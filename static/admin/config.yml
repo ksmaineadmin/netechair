@@ -31,7 +31,11 @@ collections:
             fields:
               - { label: Client, name: client, widget: string }
               - { label: Description, name: description, widget: string }
-              - { label: Photo, name: photo, widget: image, required: false }
+          - label: 'Gallery'
+            name: 'galleryImages'
+            widget: 'list'
+            summary: '{{fields.image}}'
+            field: { label: Image, name: image, widget: image }
 media_folder: 'static/uploads'
 public_folder: '/uploads'
 site_url: https://netechair.netlify.app
