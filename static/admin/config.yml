@@ -21,11 +21,11 @@ collections:
               - { label: Photo, name: photo, widget: image, required: false }
   - label: 'Projects'
     name: 'projects'
+    create: true
     files:
       - label: 'Projects'
         name: 'projects'
         file: 'static/data/projects.json'
-        create: true
         fields:
           - { label: Project Description, name: description, widget: string }
           - { label: Client, name: client, widget: string }
