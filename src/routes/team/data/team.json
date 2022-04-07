@@ -2,17 +2,12 @@
   "title": "Team",
   "team-member": [
     {
-      "name": "Norman Locke",
-      "position": "President"
-    },
-    {
       "name": "Bob Lilly",
       "position": "CEO"
     },
     {
-      "name": "Jarrod Lilly",
-      "position": "Business Development",
-      "photo": ""
+      "name": "Norman Locke",
+      "position": "President"
     },
     {
       "name": "Kevin Robinson",
@@ -49,6 +44,11 @@
     {
       "name": "Dana Melanson",
       "position": "Human Resources"
+    },
+    {
+      "name": "Jarrod Lilly",
+      "position": "Business Development",
+      "photo": ""
     },
     {
       "name": "Ken Austin",
