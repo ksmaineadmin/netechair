@@ -9,6 +9,10 @@
     {
       "name": "Bob Lilly",
       "position": "CEO"
+    },
+    {
+      "name": "Norman Locke",
+      "position": "President"
     }
   ]
 }
