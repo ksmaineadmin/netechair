@@ -3,13 +3,12 @@
 	import PageHeader from '../../lib/components/page-header/page-header.svelte';
 
 	export async function load({ fetch }) {
-		const res = await fetch('./data/team.json');
+		const res = await fetch('/data/team.json');
 		const data = await res.json();
-		const formattedData = data['team-member'];
-		console.log(formattedData);
+		const team = data.teamMember;
 		if (res.ok) {
 			return {
-				props: { teamMembers: formattedData }
+				props: { teamMembers: team }
 			};
 		}
 	}
