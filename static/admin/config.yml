@@ -20,6 +20,6 @@ collections:
               - { label: Photo, name: photo, widget: image, required: false }
 media_folder: 'static/uploads'
 public_folder: '/uploads'
-# site_url: https://your-site.com
-# display_url: https://your-site.com
+site_url: https://netechair.netlify.app
+display_url: https://netechair.netlify.app
 # logo_url: https://your-site.com/images/logo.svg
