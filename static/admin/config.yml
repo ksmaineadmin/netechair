@@ -24,6 +24,7 @@ collections:
     create: true
     files:
       - label: 'Projects'
+        create: true
         name: 'projects'
         file: 'static/data/projects.json'
         fields:
