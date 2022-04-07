@@ -19,16 +19,19 @@ collections:
               - { label: Name, name: name, widget: string }
               - { label: Position, name: position, widget: string }
               - { label: Photo, name: photo, widget: image, required: false }
-      - name: 'projects'
-        label: 'Projects'
+      - label: 'Team Page'
+        name: 'team'
         format: 'json'
-        file: 'static/data/projects.json'
-        widget: 'list'
-        optional: true
+        file: 'static/data/team.json'
         fields:
-          - { label: 'Title', name: 'imgTitle', widget: 'string' }
-          - { label: 'Project Image', name: 'imgSrc', widget: 'image' }
-          - { label: 'Description', name: 'imgDesc', widget: 'string' }
+          - { label: Title, name: title, widget: string }
+          - label: 'Team Member'
+            name: teamMember
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Position, name: position, widget: string }
+              - { label: Photo, name: photo, widget: image, required: false }
 media_folder: 'static/uploads'
 public_folder: '/uploads'
 site_url: https://netechair.netlify.app
