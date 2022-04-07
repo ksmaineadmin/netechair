@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: ksmaineadmin/netechair
   branch: main
 collections:
   - label: 'Pages'
