@@ -19,20 +19,20 @@ collections:
               - { label: Name, name: name, widget: string }
               - { label: Position, name: position, widget: string }
               - { label: Photo, name: photo, widget: image, required: false }
-      - label: 'Portfolio'
-        name: 'portfolio'
-        files:
-          - label: 'Portfolio images'
-            name: 'portfolioImages'
-            file: 'static/data/projects.json'
-            fields:
-              - label: 'Images'
-                label_singular: 'image'
-                name: 'images'
-                widget: 'list'
-                collapsed: true
-                summary: '{{fields.image}}'
-                field: { label: Image, name: image, widget: image }
+  - label: 'Portfolio'
+    name: 'portfolio'
+    files:
+      - label: 'Portfolio images'
+        name: 'portfolioImages'
+        file: 'static/data/projects.json'
+        fields:
+          - label: 'Images'
+            label_singular: 'image'
+            name: 'images'
+            widget: 'list'
+            collapsed: true
+            summary: '{{fields.image}}'
+            field: { label: Image, name: image, widget: image }
 
 media_folder: 'static/uploads'
 public_folder: '/uploads'
