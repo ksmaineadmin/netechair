@@ -19,16 +19,14 @@ collections:
               - { label: Name, name: name, widget: string }
               - { label: Position, name: position, widget: string }
               - { label: Photo, name: photo, widget: image, required: false }
-
-    files:
-      -  name: "galleria"
-         label: "Gallery" 
-         widget: "list"
-         optional: true
-         fields:
-          - {label: "Title", name: "imgTitle", widget: "string"}
-          - {label: "Gallery Image", name: "imgSrc", widget: "image"}
-          - {label: "Description", name: "imgDesc", widget: "string"}
+      - name: 'galleria'
+        label: 'Gallery'
+        widget: 'list'
+        optional: true
+        fields:
+          - { label: 'Title', name: 'imgTitle', widget: 'string' }
+          - { label: 'Gallery Image', name: 'imgSrc', widget: 'image' }
+          - { label: 'Description', name: 'imgDesc', widget: 'string' }
 media_folder: 'static/uploads'
 public_folder: '/uploads'
 site_url: https://netechair.netlify.app
