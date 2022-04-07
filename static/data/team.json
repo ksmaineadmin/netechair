@@ -7,6 +7,22 @@
     {
       "name": "Norman Locke",
       "position": "President"
+    },
+    {
+      "name": "Kevin Robinson",
+      "position": "General Manager"
+    },
+    {
+      "name": "Garrett Duffy",
+      "position": "Executive Production Manager"
+    },
+    {
+      "name": "John Frankl",
+      "position": "Fabrication Sales"
+    },
+    {
+      "name": "Rick Enwright",
+      "position": "Regional Executive"
     }
   ],
   "title": "Team"
