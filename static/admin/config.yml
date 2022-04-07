@@ -12,7 +12,7 @@ collections:
         fields:
           - { label: Title, name: title, widget: string }
           - label: 'Team Member'
-            name: team-member
+            name: teamMember
             widget: list
             fields:
               - { label: Name, name: name, widget: string }
