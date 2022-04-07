@@ -5,9 +5,11 @@
 	export async function load({ fetch }) {
 		const res = await fetch('src/routes/team/data/team.json');
 		const data = await res.json();
+		const formattedData = data['team-member'];
+		console.log(formattedData);
 		if (res.ok) {
 			return {
-				props: { teamMembers: data }
+				props: { teamMembers: formattedData }
 			};
 		}
 	}
@@ -27,7 +29,7 @@
 	<div class="container" data-aos="fade-in">
 		{#each teamMembers as teamMember, index}
 			<div class={index === 0 || index === 1 ? 'span-full' : 'full-width'}>
-				<TeamCard employeeName={teamMember.name} title={teamMember.title} />
+				<TeamCard employeeName={teamMember.name} title={teamMember.position} />
 			</div>
 		{/each}
 	</div>
