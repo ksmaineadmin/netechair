@@ -36,6 +36,7 @@
 					<img
 						src={`projects/images/${project.images[0]}`}
 						alt={project.name + ' thumbnail image'}
+						loading="lazy"
 					/>
 				</a>
 				<h4>{project.name}</h4>
