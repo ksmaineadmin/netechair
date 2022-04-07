@@ -8,6 +8,7 @@
 				data-aos="fade-up"
 				width="100"
 				height="77"
+				loading="lazy"
 			/>
 		</div>
 		<div data-aos="fade-up" data-aos-delay="100" class="affiliations__box">
@@ -16,13 +17,14 @@
 				alt="ASHRAE Professional association logo"
 				width="100"
 				height="77"
+				loading="lazy"
 			/>
 		</div>
 		<div data-aos="fade-up" data-aos-delay="200" class="affiliations__box">
-			<img src="images/osha_thumb.png" alt="OSHA logo" width="100" height="77" />
+			<img src="images/osha_thumb.png" alt="OSHA logo" width="100" height="77" loading="lazy" />
 		</div>
 		<div data-aos="fade-up" data-aos-delay="300" class="affiliations__box">
-			<img src="images/smacna_thumb.png" alt="SMACNA Logo" width="100" height="77" />
+			<img src="images/smacna_thumb.png" alt="SMACNA Logo" width="100" height="77" loading="lazy" />
 		</div>
 	</div>
 </section>
