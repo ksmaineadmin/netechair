@@ -22,27 +22,28 @@
 <PageHeader title="Projects" backgroundImageUrl="images/sparks.jpg" />
 
 <section>
-	<div class="content">
-		<p class="introlang">
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia minima placeat
-			perspiciatis a illum labore laboriosam, possimus cupiditate, dignissimos provident, velit quo.
-			Officia iure aliquid explicabo reprehenderit, alias consequuntur?
-		</p>
-	</div>
-	<div class="portholder">
+	<div class="project__grid">
 		{#each projects as project}
-			<div class="portitem" data-aos="flip-left" data-aos-delay="000">
+			<!-- data-aos="flip-left" data-aos-delay="000" -->
+			<div class="project__cell">
 				<a href={`/projects/${project.slug}`}>
 					{#if project?.images?.length}
 						<img
 							src={`${project.images[0]}`}
+							class="project__image"
 							alt={project.name + ' thumbnail image'}
 							loading="lazy"
 							title={project.name + ' thumbnail image'}
 						/>
+					{:else}
+						<img
+							src="https://via.placeholder.com/150?text=No+image+available"
+							class="project__image"
+							alt=""
+						/>
 					{/if}
 				</a>
-				<a href={`/projects/${project.slug}`}>{project.name}</a>
+				<a href={`/projects/${project.slug}`} class="project__link">{project.name}</a>
 			</div>
 		{/each}
 	</div>
@@ -51,6 +52,41 @@
 <style lang="scss">
 	@import '../../mixins.scss';
 	@import '../../variables.scss';
+
+	.project {
+		&__grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+			gap: 3rem;
+		}
+
+		&__cell {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr auto;
+			text-align: center;
+		}
+
+		&__link {
+			padding: 1rem;
+		}
+
+		&__image {
+			object-fit: cover;
+			max-height: 220px;
+			height: 100%;
+			width: 100%;
+			border-radius: 2px;
+			transition: all ease-in-out 300ms;
+			filter: grayscale(1);
+
+			&:hover {
+				transform: scale(1.01) translateY(-2px);
+				filter: grayscale(0);
+				transition: all ease-in-out 300ms;
+			}
+		}
+	}
 
 	.page-header {
 		@include section-header();
@@ -63,73 +99,6 @@
 
 		@media (max-width: $device-medium) {
 			padding: 1rem;
-		}
-	}
-
-	.content {
-		max-width: 900px;
-		width: 100%;
-		padding: 0 15px;
-		margin: 0 auto 50px;
-		.introlang {
-			color: var(--secondary-font-color);
-			margin-bottom: 60px;
-			font-size: 18px;
-			line-height: 35px;
-		}
-	}
-	.portholder {
-		display: flex;
-		flex-wrap: wrap;
-		width: 100%;
-		justify-content: center;
-
-		.portitem {
-			width: 20%;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			padding: 10px;
-			margin: 10px 0;
-			cursor: pointer;
-			&:hover img {
-				transform: scale(1.08) translateY(-9px);
-				filter: grayscale(0);
-				transition: all ease-in-out 100ms;
-			}
-			&:hover h4 {
-				color: var(--accent-color);
-				transition: all ease-in-out 100ms;
-			}
-
-			img {
-				width: 100%;
-				transition: all ease-in-out 100ms;
-				filter: grayscale(1);
-			}
-			h4 {
-				font-size: 20px;
-				text-transform: uppercase;
-				letter-spacing: 0.7px;
-				margin: 10px 0 0 0;
-			}
-			p {
-				margin: 5px;
-				font-size: 13px;
-			}
-			@media only screen and (max-width: 1600px) {
-				width: 25%;
-			}
-			@media only screen and (max-width: 1100px) {
-				width: 33%;
-			}
-			@media only screen and (max-width: 800px) {
-				width: 50%;
-			}
-			@media only screen and (max-width: 560px) {
-				width: 100%;
-			}
 		}
 	}
 </style>
