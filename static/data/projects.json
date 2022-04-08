@@ -31,6 +31,14 @@
     {
       "name": "William & Mary Performing Arts Center",
       "location": "Williamsburg, VA"
+    },
+    {
+      "name": "NE Bio Lab",
+      "location": "Hamden, CT"
+    },
+    {
+      "name": "MUSC Childrens Hospital",
+      "location": "Charleston, SC"
     }
   ]
 }
