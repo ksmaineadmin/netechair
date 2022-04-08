@@ -75,7 +75,13 @@
     {
       "name": "William & Mary Performing Arts Center",
       "location": "Williamsburg, VA",
-      "slug": "william-mary-performing-arts-center"
+      "slug": "william-mary-performing-arts-center",
+      "images": [
+        "/uploads/William-Mary-Performing-Arts-Complex-4.jpg",
+        "/uploads/William-Mary-Performing-Arts-Complex-athletics.jpg",
+        "/uploads/William-Mary-Performing-Arts-Complex-rendering-2.jpg",
+        "/uploads/William-Mary-Performing-Arts-Complex-rendering-3.jpg"
+      ]
     },
     {
       "name": "NE Bio Lab",
