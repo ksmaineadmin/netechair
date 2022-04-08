@@ -7,6 +7,10 @@
     {
       "name": "Carillion Hospital",
       "location": "Roanoke, VA"
+    },
+    {
+      "name": "Roanoke VAVCU Hospital",
+      "location": "Richmond, VA"
     }
   ]
 }
