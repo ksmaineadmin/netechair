@@ -24,8 +24,6 @@ collections:
         format: 'json'
         file: 'static/data/projects.json'
         fields:
-          - { label: Name, name: name, widget: string }
-          - { label: Location, name: location, widget: string }
           - label: 'Project'
             name: project
             widget: list
