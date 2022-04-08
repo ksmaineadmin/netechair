@@ -59,6 +59,10 @@
     {
       "name": "Maine General Hospital",
       "location": "Augusta, ME"
+    },
+    {
+      "name": "This is a test",
+      "location": "Location"
     }
   ]
 }
