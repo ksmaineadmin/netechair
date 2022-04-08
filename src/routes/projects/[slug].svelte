@@ -35,11 +35,7 @@
 			{#if project?.images?.length}
 				{#each project.images as image, index}
 					<div class="portitem {index === 0 ? 'span-full' : ''}">
-						<img
-							src={`../projects/images/${image}`}
-							alt={project.name + ' thumbnail image'}
-							loading="lazy"
-						/>
+						<img src={`${image}`} alt={project.name + ' thumbnail image'} loading="lazy" />
 					</div>
 				{/each}
 			{/if}

@@ -35,7 +35,7 @@
 				<a href={`/projects/${project.slug}`}>
 					{#if project?.images?.length}
 						<img
-							src={`projects/images/${project.images[0]}`}
+							src={`${project.images[0]}`}
 							alt={project.name + ' thumbnail image'}
 							loading="lazy"
 							title={project.name + ' thumbnail image'}
