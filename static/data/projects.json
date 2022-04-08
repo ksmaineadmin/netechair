@@ -98,7 +98,13 @@
     {
       "name": "MUSC Childrens Hospital",
       "location": "Charleston, SC",
-      "slug": "musc-childrens-hospital"
+      "slug": "musc-childrens-hospital",
+      "images": [
+        "/uploads/musc1.jpg",
+        "/uploads/musc2.jpg",
+        "/uploads/musc3.jpg",
+        "/uploads/musc4.jpg"
+      ]
     },
     {
       "name": "Concord Prison",
