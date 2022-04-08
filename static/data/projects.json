@@ -63,6 +63,10 @@
     {
       "name": "This is a test",
       "location": "Location"
+    },
+    {
+      "name": "Test 2",
+      "location": "Location"
     }
   ]
 }
