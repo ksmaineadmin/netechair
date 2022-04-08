@@ -11,6 +11,14 @@
     {
       "name": "Roanoke VAVCU Hospital",
       "location": "Richmond, VA"
+    },
+    {
+      "name": "General Assembly",
+      "location": "Richmond, VA"
+    },
+    {
+      "name": "St. Jude Research Hospital",
+      "location": "Memphis, TN"
     }
   ]
 }
