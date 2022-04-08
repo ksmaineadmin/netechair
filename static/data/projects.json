@@ -39,6 +39,10 @@
     {
       "name": "MUSC Childrens Hospital",
       "location": "Charleston, SC"
+    },
+    {
+      "name": "Concord Prison",
+      "location": "Concord, NH"
     }
   ]
 }
