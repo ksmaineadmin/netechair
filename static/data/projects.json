@@ -109,7 +109,16 @@
     {
       "name": "Concord Prison",
       "location": "Concord, NH",
-      "slug": "concord-prison"
+      "slug": "concord-prison",
+      "images": [
+        "/uploads/concord-prison1.jpg",
+        "/uploads/ concord-prison7.jpg",
+        "/uploads/concord-prison2.jpg",
+        "/uploads/concord-prison3.jpg",
+        "/uploads/concord-prison4.jpg",
+        "/uploads/concord-prison5.jpg",
+        "/uploads/concord-prison6.jpg"
+      ]
     },
     {
       "name": "Amazon Distribution Center",
