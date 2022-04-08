@@ -67,6 +67,10 @@
     {
       "name": "Test 2",
       "location": "Location"
+    },
+    {
+      "name": "Test 3",
+      "location": "Test 3 location"
     }
   ]
 }
