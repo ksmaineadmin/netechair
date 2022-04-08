@@ -3,7 +3,12 @@
     {
       "name": "MIT Lincoln Labs",
       "location": "Hanscom Air Force Base, MA",
-      "slug": "mit-lincoln-labs"
+      "slug": "mit-lincoln-labs",
+      "images": [
+        "/uploads/mitlincolnlabs1.jpg",
+        "/uploads/mitlincolnlabs2.jpg",
+        "/uploads/mitlincolnlabs3.jpg"
+      ]
     },
     {
       "name": "Carillion Hospital",
