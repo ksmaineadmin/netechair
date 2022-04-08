@@ -13,7 +13,13 @@
     {
       "name": "Carillion Hospital",
       "location": "Roanoke, VA",
-      "slug": "carillion-hospital"
+      "slug": "carillion-hospital",
+      "images": [
+        "/uploads/Carilion1.jpg",
+        "/uploads/Carilion2.jpg",
+        "/uploads/Carilion3.jpg",
+        "/uploads/Carilion5.jpg"
+      ]
     },
     {
       "name": "Roanoke VAVCU Hospital",
