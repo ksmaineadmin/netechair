@@ -29,7 +29,7 @@ collections:
             widget: list
             fields:
               - { label: Name, name: name, widget: string }
-              - { label: Position, name: position, widget: string }
+              - { label: Location, name: location, widget: string }
               - label: 'Images'
                 label_singular: 'image'
                 name: 'images'
