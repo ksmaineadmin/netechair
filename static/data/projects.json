@@ -123,22 +123,26 @@
     {
       "name": "Amazon Distribution Center",
       "location": "Raleigh, NC",
-      "slug": "amazon-distribution-center"
+      "slug": "amazon-distribution-center",
+      "images": []
     },
     {
       "name": "Lonza Pharmaceutical Lab",
       "location": "Newington, MA",
-      "slug": "lonza-pharmaceutical-lab"
+      "slug": "lonza-pharmaceutical-lab",
+      "images": []
     },
     {
       "name": "Colby College Garden Center",
       "location": "Waterville, ME",
-      "slug": "colby-college-garden-center"
+      "slug": "colby-college-garden-center",
+      "images": []
     },
     {
       "name": "Maine General Hospital",
       "location": "Augusta, ME",
-      "slug": "maine-general-hospital"
+      "slug": "maine-general-hospital",
+      "images": []
     }
   ]
 }
