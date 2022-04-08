@@ -24,12 +24,20 @@
     {
       "name": "Roanoke VAVCU Hospital",
       "location": "Richmond, VA",
-      "slug": "roanoke-vavcu-hospital"
+      "slug": "roanoke-vavcu-hospital",
+      "images": []
     },
     {
       "name": "General Assembly",
       "location": "Richmond, VA",
-      "slug": "general-assembly"
+      "slug": "general-assembly",
+      "images": [
+        "/uploads/general-assembly1.jpg",
+        "/uploads/general-assembly2.jpg",
+        "/uploads/general-assembly3.jpg",
+        "/uploads/general-assembly5.jpg",
+        "/uploads/general-assembly6.jpg"
+      ]
     },
     {
       "name": "St. Jude Research Hospital",
