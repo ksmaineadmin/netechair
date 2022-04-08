@@ -19,6 +19,14 @@
     {
       "name": "St. Jude Research Hospital",
       "location": "Memphis, TN"
+    },
+    {
+      "name": "UNC Chapel Hill Hospital",
+      "location": "Raleigh, NC"
+    },
+    {
+      "name": "PNS Paint & Blast",
+      "location": "Portsmouth Naval Shipyard, NH"
     }
   ]
 }
