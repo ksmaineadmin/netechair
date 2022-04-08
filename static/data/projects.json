@@ -42,12 +42,21 @@
     {
       "name": "St. Jude Research Hospital",
       "location": "Memphis, TN",
-      "slug": "st-jude-research-hospital"
+      "slug": "st-jude-research-hospital",
+      "images": []
     },
     {
       "name": "UNC Chapel Hill Hospital",
       "location": "Raleigh, NC",
-      "slug": "unc-chapel-hill-hospital"
+      "slug": "unc-chapel-hill-hospital",
+      "images": [
+        "/uploads/unc-ch-hospital1.jpg",
+        "/uploads/unc-ch-hospital2.jpg",
+        "/uploads/unc-ch-hospital3.jpg",
+        "/uploads/unc-ch-hospital4.jpg",
+        "/uploads/unc-ch-hospital5.png",
+        "/uploads/unc-ch-hospital6.jpg"
+      ]
     },
     {
       "name": "PNS Paint & Blast",
