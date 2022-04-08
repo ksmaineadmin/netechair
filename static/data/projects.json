@@ -43,6 +43,10 @@
     {
       "name": "Concord Prison",
       "location": "Concord, NH"
+    },
+    {
+      "name": "Amazon Distribution Center",
+      "location": "Raleigh, NC"
     }
   ]
 }
