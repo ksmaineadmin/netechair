@@ -2,75 +2,78 @@
   "projects": [
     {
       "name": "MIT Lincoln Labs",
-      "location": "Hanscom Air Force Base, MA"
+      "location": "Hanscom Air Force Base, MA",
+      "slug": "mit-lincoln-labs"
     },
     {
       "name": "Carillion Hospital",
-      "location": "Roanoke, VA"
+      "location": "Roanoke, VA",
+      "slug": "carillion-hospital"
     },
     {
       "name": "Roanoke VAVCU Hospital",
-      "location": "Richmond, VA"
+      "location": "Richmond, VA",
+      "slug": "roanoke-vavcu-hospital"
     },
     {
       "name": "General Assembly",
-      "location": "Richmond, VA"
+      "location": "Richmond, VA",
+      "slug": "general-assembly"
     },
     {
       "name": "St. Jude Research Hospital",
-      "location": "Memphis, TN"
+      "location": "Memphis, TN",
+      "slug": "st-jude-research-hospital"
     },
     {
       "name": "UNC Chapel Hill Hospital",
-      "location": "Raleigh, NC"
+      "location": "Raleigh, NC",
+      "slug": "unc-chapel-hill-hospital"
     },
     {
       "name": "PNS Paint & Blast",
-      "location": "Portsmouth Naval Shipyard, NH"
+      "location": "Portsmouth Naval Shipyard, NH",
+      "slug": "pns-paint-blast"
     },
     {
       "name": "William & Mary Performing Arts Center",
-      "location": "Williamsburg, VA"
+      "location": "Williamsburg, VA",
+      "slug": "william-mary-performing-arts-center"
     },
     {
       "name": "NE Bio Lab",
-      "location": "Hamden, CT"
+      "location": "Hamden, CT",
+      "slug": "ne-bio-lab"
     },
     {
       "name": "MUSC Childrens Hospital",
-      "location": "Charleston, SC"
+      "location": "Charleston, SC",
+      "slug": "musc-childrens-hospital"
     },
     {
       "name": "Concord Prison",
-      "location": "Concord, NH"
+      "location": "Concord, NH",
+      "slug": "concord-prison"
     },
     {
       "name": "Amazon Distribution Center",
-      "location": "Raleigh, NC"
+      "location": "Raleigh, NC",
+      "slug": "amazon-distribution-center"
     },
     {
       "name": "Lonza Pharmaceutical Lab",
-      "location": "Newington, MA"
+      "location": "Newington, MA",
+      "slug": "lonza-pharmaceutical-lab"
     },
     {
       "name": "Colby College Garden Center",
-      "location": "Waterville, ME"
+      "location": "Waterville, ME",
+      "slug": "colby-college-garden-center"
     },
     {
       "name": "Maine General Hospital",
-      "location": "Augusta, ME"
-    },
-    {
-      "name": "This is a test",
-      "location": "Location"
-    },
-    {
-      "name": "Test 2",
-      "location": "Location"
-    },
-    {
-      "name": "Test 3",
-      "location": "Test 3 location"
+      "location": "Augusta, ME",
+      "slug": "maine-general-hospital"
     }
   ]
 }
