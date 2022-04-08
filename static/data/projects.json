@@ -86,7 +86,14 @@
     {
       "name": "NE Bio Lab",
       "location": "Hamden, CT",
-      "slug": "ne-bio-lab"
+      "slug": "ne-bio-lab",
+      "images": [
+        "/uploads/nebio1.jpg",
+        "/uploads/nebio2.jpg",
+        "/uploads/nebio3.jpg",
+        "/uploads/nebio4.jpg",
+        "/uploads/nebiof.jpg"
+      ]
     },
     {
       "name": "MUSC Childrens Hospital",
