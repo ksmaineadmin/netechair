@@ -27,10 +27,10 @@ collections:
           - label: 'Project'
             name: projects
             widget: list
+            identifier_field: name
             fields:
               - { label: Name, name: name, widget: string }
               - { label: Location, name: location, widget: string }
-                identifier_field: name
               - label: 'Images'
                 label_singular: 'image'
                 name: 'images'
