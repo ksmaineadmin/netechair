@@ -2,6 +2,7 @@ backend:
   name: git-gateway
   repo: ksmaineadmin/netechair
   branch: main
+publish_mode: editorial_workflow
 collections:
   - label: 'Pages'
     name: 'pages'
@@ -27,11 +28,11 @@ collections:
           - label: 'Project'
             name: projects
             widget: list
-            identifier_field: name
             fields:
               - { label: Name, name: name, widget: string }
               - { label: Location, name: location, widget: string }
               - label: 'Images'
+                slug: '{{name}}-{{location}}'
                 label_singular: 'image'
                 name: 'images'
                 widget: 'list'
