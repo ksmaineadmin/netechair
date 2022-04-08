@@ -4,7 +4,7 @@
 		const data = await res.json();
 		if (res.ok) {
 			return {
-				props: { projects: data }
+				props: { projects: data.projects }
 			};
 		}
 	}

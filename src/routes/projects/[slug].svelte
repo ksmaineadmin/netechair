@@ -1,9 +1,8 @@
 <script context="module" lang="js">
 	export async function load({ fetch, params }) {
-		const res = await fetch('data/projects.json');
+		const res = await fetch('/data/projects.json');
 		const data = await res.json();
-		console.log(data);
-		const currentlySelectedProject = data.find((p) => p.slug === params.slug);
+		const currentlySelectedProject = data.projects.find((p) => p.slug === params.slug);
 		if (res.ok) {
 			return {
 				props: { project: currentlySelectedProject }
@@ -33,15 +32,17 @@
 			<p>27 August 2020</p> -->
 		</div>
 		<div class="portfolio__gallery">
-			{#each project.images as image, index}
-				<div class="portitem {index === 0 ? 'span-full' : ''}">
-					<img
-						src={`../projects/images/${image}`}
-						alt={project.name + ' thumbnail image'}
-						loading="lazy"
-					/>
-				</div>
-			{/each}
+			{#if project?.images?.length}
+				{#each project.images as image, index}
+					<div class="portitem {index === 0 ? 'span-full' : ''}">
+						<img
+							src={`../projects/images/${image}`}
+							alt={project.name + ' thumbnail image'}
+							loading="lazy"
+						/>
+					</div>
+				{/each}
+			{/if}
 		</div>
 	</div>
 </section>
