@@ -32,7 +32,13 @@ collections:
             fields:
               - { label: Name, name: name, widget: string }
               - { label: Position, name: position, widget: string }
-              - { label: Photo, name: photo, widget: image, required: false }
+              - label: 'Images'
+                label_singular: 'image'
+                name: 'images'
+                widget: 'list'
+                collapsed: true
+                summary: '{{fields.image}}'
+                field: { label: Image, name: image, widget: image }
   # - label: 'Projects'
   #   name: 'projects'
   #   files:
