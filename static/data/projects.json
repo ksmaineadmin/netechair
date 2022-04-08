@@ -61,7 +61,16 @@
     {
       "name": "PNS Paint & Blast",
       "location": "Portsmouth Naval Shipyard, NH",
-      "slug": "pns-paint-blast"
+      "slug": "pns-paint-blast",
+      "images": [
+        "/uploads/pns1.jpg",
+        "/uploads/pns2.jpg",
+        "/uploads/pns3.jpg",
+        "/uploads/pns4.jpg",
+        "/uploads/pnsF.jpg",
+        "/uploads/pnsFF.jpg",
+        "/uploads/pnslogo.png"
+      ]
     },
     {
       "name": "William & Mary Performing Arts Center",
