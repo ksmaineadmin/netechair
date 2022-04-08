@@ -4,7 +4,7 @@
 		const data = await res.json();
 		if (res.ok) {
 			return {
-				props: { projects: data.projects }
+				props: { projects: data }
 			};
 		}
 	}
@@ -33,13 +33,16 @@
 		{#each projects as project}
 			<div class="portitem" data-aos="flip-left" data-aos-delay="000">
 				<a href={`/projects/${project.slug}`}>
-					<img
-						src={`projects/images/${project.images[0]}`}
-						alt={project.name + ' thumbnail image'}
-						loading="lazy"
-					/>
+					{#if project?.images?.length}
+						<img
+							src={`projects/images/${project.images[0]}`}
+							alt={project.name + ' thumbnail image'}
+							loading="lazy"
+							title={project.name + ' thumbnail image'}
+						/>
+					{/if}
 				</a>
-				<h4>{project.name}</h4>
+				<a href={`/projects/${project.slug}`}>{project.name}</a>
 			</div>
 		{/each}
 	</div>
@@ -89,6 +92,7 @@
 			align-items: center;
 			padding: 10px;
 			margin: 10px 0;
+			cursor: pointer;
 			&:hover img {
 				transform: scale(1.08) translateY(-9px);
 				filter: grayscale(0);

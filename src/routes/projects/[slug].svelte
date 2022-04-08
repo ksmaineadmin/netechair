@@ -2,6 +2,7 @@
 	export async function load({ fetch, params }) {
 		const res = await fetch('data/projects.json');
 		const data = await res.json();
+		console.log(data);
 		const currentlySelectedProject = data.find((p) => p.slug === params.slug);
 		if (res.ok) {
 			return {
